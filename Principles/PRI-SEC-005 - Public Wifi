@@ -2,13 +2,13 @@ Category: Architecture Principles
 Created: 2022-03-22
 Domain: Security
 Author: pete.dingwall@education.gov.uk
-References: PRI-SEC005 - Public WiFi
+References: PRI-SEC005 - Working Remotely
 ---
 
-# Public WiFi Guidelines
+# Guidelines for working remotely
 
-## Principles for the use of APIs
-The following principles are provided to 
+## Guidelines to support users working remotely
+The following guidelines are provided to guide Department users when working remotely and using public or home wireless connections to access services and resources provided by the Department.
 
 **Exceptions** to the principles will be reviewed with the security and architecture governance teams and approved or declined as relevant, with all decisions tracked with rationale for future reference.
 
@@ -17,17 +17,32 @@ The following principles are provided to
 **Escalations** will be dealt with within the immediate leadership within the relevant architecture domain (up to DD level) and to the SLT by exception.
 
 ## Introduction
-Public WiFi is used to...
+The Department's workforce are provided with laptop and tablet devices to enable flexible working to suit their personal and team's requirements. This flexibility was essential during the pandemic with regular requirements to work from home at short notice, and the need continues as our users adopt hybrid working patterns as part of our return to the office.
 
-Examples...
+Our teams are diverse in nature and often geographically spread, requiring some to regularly travel to other offices for collaborative sessions or team working. The Department's remote access solution permits secure access whilst users are travelling to/from sites, and users will work flexibly whilst travelling to/from the site and whilst at the site.
 
-## 1. Ensure adherence to Department policies and relevant principles
+These guidelines will help users to understand how to work securely and safely and protect access to the Department's systems and data.
 
-*Standard Department principles will provide the secure baseline for the service and data being exposed*
+## 1. Follow best practices to secure IT services at home
+
+*Devices in your home can be vulnerable to malicious activity which could spread to other devices*
 
 #### Why?
-The policies outlined within the InfoSec Policy Suite provide the broad guidance, whilst princples outlined in PRI-SEC001 define the best practices to ensure that data is secured and access is managed appropriately
+Good cyber security begins at home. Security best practices should cover all of your devices at home, not just your work-issued computer and phone. Cyber criminals may seek to exploit your personal devices to steal your credentials or personal information about you, so they can impersonate you or access your personal systems for malicious use. This could lead to a compromise which could also affect your work devices and expose your credentials or the Department's data.
+
 #### How?
--   Review PRI-SEC001 and apply all principles
--   Where appropriate, consciously exclude and log principles which are not relevant
--   Capture any exceptions and review with the assigned Information Security lead
+Follow standard guidance issued by the National Cyber Security Centre to help to understand risks and how to secure your services from cyber criminals. https://www.ncsc.gov.uk/cyberessentials/advice
+
+## 2. Protect access to home wifi services
+
+*Following best practices to ensure that access to your home services is protected*
+
+#### Why?
+Home WiFi solutions broadcast their signal beyond the boundary of your property and your service be snooped and re-used by others if not protected appropriately. This could lead to devices on your home network being accessed unintentionally and targeted for malicious activities.
+
+#### How?
+- Follow the standard best practices provided by the supplier of your broadband service
+- Use a strong password for your WiFi connection, do not use obvious or easily-guessable passwords
+- Ensure that encryption is enabled for wireless on your broadband router (WPA2 is the most common and is normally enabled by default)
+
+## 3. 
