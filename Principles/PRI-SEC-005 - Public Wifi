@@ -1,0 +1,33 @@
+Category: Architecture Principles
+Created: 2022-03-22
+Domain: Security
+Author: pete.dingwall@education.gov.uk
+References: PRI-SEC005 - Public WiFi
+---
+
+# Public WiFi Guidelines
+
+## Principles for the use of APIs
+The following principles are provided to 
+
+**Exceptions** to the principles will be reviewed with the security and architecture governance teams and approved or declined as relevant, with all decisions tracked with rationale for future reference.
+
+**Updates or modifications** to the principles can be requested via the owning architect, and will be reviewed against the roadmap and strategy and within the Architecture profession.
+
+**Escalations** will be dealt with within the immediate leadership within the relevant architecture domain (up to DD level) and to the SLT by exception.
+
+## Introduction
+Public WiFi is used to...
+
+Examples...
+
+## 1. Ensure adherence to Department policies and relevant principles
+
+*Standard Department principles will provide the secure baseline for the service and data being exposed*
+
+#### Why?
+The policies outlined within the InfoSec Policy Suite provide the broad guidance, whilst princples outlined in PRI-SEC001 define the best practices to ensure that data is secured and access is managed appropriately
+#### How?
+-   Review PRI-SEC001 and apply all principles
+-   Where appropriate, consciously exclude and log principles which are not relevant
+-   Capture any exceptions and review with the assigned Information Security lead
