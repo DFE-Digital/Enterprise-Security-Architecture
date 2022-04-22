@@ -1,13 +1,12 @@
+---
+Category: Guidance |
+Created: 2022-03-04 |
+Domain: Sector Security |
+Author: pete.dingwall@education.gov.uk |
+References: GUI-SEC001 - MFA Guidance |
+---
 
 # Multi-Factor Authentication
-
-| Document Information |
-------------------------
-| Category: Guidance |
-| Created: 2022-03-04 |
-| Domain: Sector Security |
-| Author: pete.dingwall@education.gov.uk |
-| References: GUI-SEC001 - MFA Guidance |
 
 ## Introduction and Background
 
