@@ -3,7 +3,7 @@
 
 | Document Information |
 ------------------------
-| Category: Architecture Principles |
+| Category: Architecture Guidelines |
 | Created: 2022-03-22 |
 | Domain: Security |
 | Author: pete.dingwall@education.gov.uk |
@@ -119,7 +119,7 @@ Secure Public Wifi requires a password and is therefore less susceptible to comm
 - Be cautious of Secure Public WiFi services and apply the same levels of caution as you would do with an Open Public Wifi service
 - Be aware of the risks for saving the names of Secure Public WiFi or allowing your device to 'connect automatically'. It is still possible for this to lead to your device connecting to a malicious wifi network whch is impersonating a Secure Public Wifi service
 
-## 7. Use landing pages with caution
+## 7. Consider privacy when using Landing Pages
 
 *Data shared in landing pages could be used inappropriately for mass marketing or to gather information for social engineering*
 
@@ -142,10 +142,12 @@ You have no control over how this information will be shared and re-used, and co
 *Personal devices (aka BYOD) do not offer the same level of protection as Department-issued devices*
 
 ### Why?
-A device issued by the Department will have security measures enabled by default to secure data held on the device and to ensure that access to any online service is protected with the standard remote access solution.
+A device issued by the Department will have security measures such as internet filtering and disk encryption enabled by default to secure data held on the device and to ensure that access to any online service is protected appropiately.
 
-Users accessing the Department's services from a personal device will not have these same safeguards enabled by default as these are not pre-requisites for the BYOD service.
+Users accessing the Department's services from a personal device will not have these same safeguards enabled by default as these are not pre-requisites for the BYOD service. Users with personal devices are able to access any internet site without filtering and download any applications they choose, which could leave them vulnerable to malicious activity.
 
 ### How?
 
 - Ensure that all guidelines above are followed, with specific focus on principles 4-7 to ensure that access from personal devices is appropriately secured and resilient to malicious activity
+ - Work online with content whenever possible from online services instead of copying data locally onto personal devices
+  - Be aware of the classification of content used locally and ensure that it is protected appropriately
