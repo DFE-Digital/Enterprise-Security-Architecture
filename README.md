@@ -16,13 +16,13 @@ Artefacts within this repository are intended for:
 
 #### Briefing Notes
 
-<https://github.com/DFE-Digital/Enterprise-Security-Architecture/tree/main/Briefing-Notes>
+Briefing Notes are [here](https://github.com/DFE-Digital/Enterprise-Security-Architecture/tree/main/Briefing-Notes)
 
 #### Job Descriptions
 
-<https://github.com/DFE-Digital/Enterprise-Security-Architecture/tree/main/Job-Descriptions>
+Job Descriptions are [here](https://github.com/DFE-Digital/Enterprise-Security-Architecture/tree/main/Job-Descriptions)
 
 #### Guidelines
 
-<https://github.com/DFE-Digital/Enterprise-Security-Architecture/tree/main/Principles>
+Guidelines are [here](https://github.com/DFE-Digital/Enterprise-Security-Architecture/tree/main/Principles)
 
