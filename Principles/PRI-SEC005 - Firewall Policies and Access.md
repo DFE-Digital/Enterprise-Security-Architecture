@@ -2,7 +2,7 @@
 # Firewall Rules Guidelines
 
 | Document Information |
-------------------------
+---|
 | Category: Architecture Guidelines |
 | Created: 2022-03-22 |
 | Domain: Security |
