@@ -1,4 +1,4 @@
-# Enterprise-Security-Architecture
+# Enterprise Security Architecture
 
 ## Introduction
 
@@ -8,7 +8,7 @@ This is a repository for artefacts created by the Enterprise Security Architectu
 Artefacts within this repository are intended for:
 
 1. Architects starting to develop new solutions, seeking guidance and advice to ensure that these are developed in-line with the Department, Government and Industry best practives
-2. 
+2. Vendors and 3rd party suppliers who need to understand standard working practices and guidelines when working with the Department and its services
 
 ### Types of artefacts
 
