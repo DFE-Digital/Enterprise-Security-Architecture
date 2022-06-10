@@ -1,11 +1,14 @@
+# Identity Guidelines
+
+
+| Category: Architecture Guidelines |
 ---
-Category: Architecture Guidelines
-Created: 2021-11-04
-Domain: Security
-Author: pete.dingwall@education.gov.uk
+| Created: 2021-11-04 |
+| Domain: Security |
+| Author: pete.dingwall@education.gov.uk |
 ---
 
-# Identity Guidelines
+
 
 ## Principles for application authentication and authorisation
 The following principles are provided to guide projects and teams when creating or procuring solutions for use by the Department's users or consumers. The principles will be used to create a framework for projects to operate within and to demonstrate alignment with best practice.

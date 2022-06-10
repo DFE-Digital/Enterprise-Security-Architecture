@@ -1,12 +1,14 @@
----
-Category: Architecture Principles
-Created: 2021-11-01
-Domain: Security
-Author: pete.dingwall@education.gov.uk
-References: PRI-SEC003 - API Security Principles
----
 
 # API security principles
+
+
+| Category: Architecture Principles |
+---
+| Created: 2021-11-01 |
+| Domain: Security |
+| Author: pete.dingwall@education.gov.uk |
+| References: PRI-SEC003 - API Security Principles |
+---
 
 ## Principles for the use of APIs
 The following principles are provided to guide projects and teams when using APIs to exchange data securely between applications and systems . The principles will be used to create a framework for projects to operate within and to demonstrate alignment with best practice.

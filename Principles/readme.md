@@ -1,10 +1,10 @@
 ---
-Category: Briefing Notes
+Category: Guidelines
 Expires: 2022-07-01
 Domain: Security Architecture
 References: None
 ---
 
-# Principles
+# Guidelines
 
-Principles are in this folder.
+Guidelines are in this folder.
