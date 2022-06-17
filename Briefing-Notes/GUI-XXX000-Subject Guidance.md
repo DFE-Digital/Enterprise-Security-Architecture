@@ -1,3 +1,5 @@
+# Guidance Title (Heading 1)
+
 ---
 Category: xxx |
 Created: 2022-03-04 |
@@ -6,7 +8,6 @@ Author: xxx.xxx@education.gov.uk |
 References: XXX-YYY000 - ZZZZZZZ |
 ---
 
-# Guidance Title (Heading 1)
 
 ## Introduction and Background (Heading 2)
 

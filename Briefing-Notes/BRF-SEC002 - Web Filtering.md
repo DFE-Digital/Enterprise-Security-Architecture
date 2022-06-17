@@ -1,18 +1,17 @@
 
-
-# Web Filtering Guidelines
+# Web Filtering Briefing Note
 
 | Document Information |
 ------------------------|
-| Category: Architecture Guidelines |
+| Category: Briefing Note |
 | Created: 2022-03-22 |
 | Domain: Security |
 | Author: pete.dingwall@education.gov.uk |
-| References: PRI-SEC006 - Web Filtering Guidelines |
+| References: BRF-SEC002 - Web Filtering |
 
 ## Baseline guidelines for Web Filtering and Internet access
 
-The following guidelines are provided to guide Department operational teams when creating and maintaining groups and access to Internet sites, and managing requests for access from the Department's delivery and operational teams.
+The following briefing note is provided to guide Department operational teams when creating and maintaining groups and access to Internet sites, and managing requests for access from the Department's delivery and operational teams.
 
 **Exceptions** to the guidelines will be reviewed with the security and architecture governance teams and approved or declined as relevant, with all decisions tracked with rationale for future reference.
 
