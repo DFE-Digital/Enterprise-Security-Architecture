@@ -2,7 +2,7 @@
 
 
 | Category: Architecture Guidelines |
----
+------------------------|
 | Created: 2021-11-04 |
 | Domain: Security |
 | Author: pete.dingwall@education.gov.uk |
