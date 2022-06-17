@@ -2,7 +2,7 @@
 
 
 | Category: Architecture Principles
----
+------------------------|
 | Created: 2021-11-01
 | Domain: Security
 | Author: pete.dingwall@education.gov.uk
