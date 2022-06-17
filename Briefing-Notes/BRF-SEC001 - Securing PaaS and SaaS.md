@@ -2,7 +2,7 @@
 # Access controls and security considerations for SaaS and PaaS
 
 | Category: Architecture principles
----
+------------------------|
 | Expires: 2022-07-01
 | Domain: Security
 | References: Authentication Principles **(PRI-SEC001)**
