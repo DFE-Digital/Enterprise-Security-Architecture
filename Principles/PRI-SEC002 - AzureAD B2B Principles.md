@@ -1,14 +1,11 @@
 # AzureAD B2B principles
 
-
 | Category: Architecture Principles |
 ------------------------|
 | Created: 2021-11-04 |
 | Domain: Identity |
 | Author: pete.dingwall@education.gov.uk |
 ---
-
-
 
 #### Introduction to AzureAD B2B
 AzureAD B2B refers to a guest account which is provided as part of the wider Microsoft Azure Active Directory (AzureAD) service. AzureAD B2B provides a 'Bring Your Own Identity' service where users who are invited into an AzureAD directory as guests and are trusted for authentication only. The DfE will not impose password standards or housekeeping for the authentication of the user, but will maintain control over the authorisation of the B2B user into any services which are provided.
