@@ -11,7 +11,7 @@
 ## Introduction
 
 Identity within these guidelines refers to how our services utilise user identities to authenticate and authorise to services, and how we design and build services to ensure consistency and re-use.
-
+p
 Consistent use of identity platforms provides a foundation to develop joined-up end-to-end user journeys across our services, and the delivery of tailored solutions and access privileges which are linked to the user's role and aligned to their needs.
 
 Guidance is also provided for the secure administration and management of our platforms and services, ensuring that access granted to systems is conscious and  appropriate, is granted only for the time required for the specific activity and is logged and audited.
@@ -70,7 +70,7 @@ By aligning with a strategic authentication service we simplify the end-user exp
 
 ### Why?
 
-* We maintain alignment with the architecture principles *<https://github.com/DFE-Digital/architecture/blob/master/principles/enterprise-architecture-principles.md#10-use-open-standards>
+* We maintain alignment with the architecture principles <https://github.com/DFE-Digital/architecture/blob/master/principles/enterprise-architecture-principles.md#10-use-open-standards>
 
 * Open Standards ease integration burden on services
 
@@ -135,7 +135,7 @@ Is it a seamless experience or does it add burden to the user?
 
 * Follow existing guidance from the Service Manual - <https://www.gov.uk/service-manual/service-standard/point-1-understand-user-needs>
 
-* Work with User Researches and Product Owners across the department and Government to understand what knowledge exists today around ID and share your users challenges wider to gather critique
+* Work with User Researchers and Product Owners across the department and Government to understand what knowledge exists today around ID and share your users challenges wider to gather critique
 
 ## 5. Consider end-user autonomy and self-service
 

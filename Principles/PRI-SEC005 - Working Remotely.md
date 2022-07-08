@@ -50,7 +50,9 @@ Home WiFi solutions broadcast their signal beyond the boundary of your property 
 ### How?
 
 - Follow the standard best practices provided by the supplier of your broadband service
+
 - Use a strong password for your WiFi connection, do not use obvious or easily-guessable passwords
+
 - Ensure that encryption is enabled for wireless on your broadband router (WPA2 is the most common and is normally enabled by default)
 
 ## 3. Be aware of surroundings when working remotely
@@ -64,8 +66,11 @@ Working remotely in public places may inadvertently allow others to overhear pri
 ### How?
 
 - Be conscious when working in public places and do not discuss confidential or sensitive matters if they may be overheard
+
 - When entering passwords and PINs be aware of who is around you and whether your keystrokes could be viewed and re-used
+
 - Do not work on sensitive or private content when working on public transport. If on a crowded train do not use your laptop or phone if it could easily be overlooked
+
 - Do not identify yourself as a Department worker by wearing lanyard or security ID outside of the office, this may identify you as a target by criminals
 
 ## 4. Access services securely
@@ -81,7 +86,11 @@ The risk of accessing less secure services when working from the Department's of
 ### How?
 
 - Use the Department's provided remote access solution at all times when working remotely to ensure that access is encrypted and secured. This provides an additional layer of protection as all access is encrypted and protected, and all access is routed via the Department's web filtering services
+
+- Do not circumvent the Department's remote access solution at any time, even on a temporary basis. Any issues with services which have been inadvertently blocked via the remote access solution should be raised via a service request for investigation and resolution
+
 - Ensure that any access to online service is using HTTPS (shown as a padlock to the left of the website in your web browser). This will ensure that data is encrypted and secured between your device and the web service
+
 - Do not enter passwords on any sites or services which only use HTTP (shown as a website with a line crossed through in your web browser), as this data will be sent in plain-text and could be intercepted
 
 ## 5. Use Open Public WiFi services with caution
@@ -99,6 +108,7 @@ Public Wifi names are well known and can be spoofed by criminals to capture data
 ### How?
 
 - Always connect to services securely, as outlined in Guideline 4
+
 - Do not save the names of public WiFi services or allow your device to 'connect automatically'as this could lead to your device connecting to a malicious wifi network whch is impersonating a public wifi service.
 
 ## 6. Be conscious of the security provided by Secure Public WiFi and apply appropriate caution
@@ -116,7 +126,9 @@ Secure Public Wifi requires a password and is therefore less susceptible to comm
 ### How?
 
 - Always connect to services securely, as outlined in Guideline 4
+
 - Be cautious of Secure Public WiFi services and apply the same levels of caution as you would do with an Open Public Wifi service
+
 - Be aware of the risks for saving the names of Secure Public WiFi or allowing your device to 'connect automatically'. It is still possible for this to lead to your device connecting to a malicious wifi network whch is impersonating a Secure Public Wifi service
 
 ## 7. Consider privacy when using Landing Pages
@@ -132,9 +144,13 @@ You have no control over how this information will be shared and re-used, and co
 ### How?
 
 - Ensure that any 'landing pages' which require you to accept conditions or enter payment details are used within the 'captive portal' within the Department's Remote Access solution
+
 - Do not provide payment information in a landing page unless you are sure that the sesion is protected and the portal shows the padlock in the address bar
+
 - Do not provide detailed personal or work-related contact information when using landing pages to connect to Open Public Internet services. You do not know how this data will be used, and it could lead to targeted phishing emails or other social engineering
+
 - Be cautious when sharing emails with Open Public Wifi services as the information may be used inappropriately and may lead to an increase in SPAM or phishing email
+
 - Consider the use of a separate 'burner' email address or a masked email service such as Apple's "Hide my Email" to manage inappropriate mails
 
 ## 8. Apply caution when using personal devices
@@ -149,5 +165,7 @@ Users accessing the Department's services from a personal device will not have t
 ### How?
 
 - Ensure that all guidelines above are followed, with specific focus on principles 4-7 to ensure that access from personal devices is appropriately secured and resilient to malicious activity
- - Work online with content whenever possible from online services instead of copying data locally onto personal devices
-  - Be aware of the classification of content used locally and ensure that it is protected appropriately
+
+ - Work online with content whenever possible via online services instead of copying data locally onto personal devices
+
+  - Be aware of the classification of content stored and accessed on the personal device and ensure that it is protected appropriately
