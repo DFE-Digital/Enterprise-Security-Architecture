@@ -53,26 +53,22 @@ Baeline security needs are met with the integration of the Protective Domain Nam
 
 The Department's web filtering service provides a number of categorisations which are automatically managed by the service provider. The application of these filters provide further protection as part of the defence-in-depth approach:
 
- - **Malware** - any sites which are categorised as a malware threat will be automatically blocked. These are sites which are known to host malware which could infect the Department's devices, or which are used for malicious use
+- **Malware** - any sites which are categorised as a malware threat will be automatically blocked. These are sites which are known to host malware which could infect the Department's devices, or which are used for malicious use
 
- - **Newly Registered Domains** - any sites which have recently been created and registered will be blocked. These could be an indicator of suspicious  activity as malicious users often create a new domain to temporarily hold data or host services which are used to control 'bots'
+- **Newly Registered Domains** - any sites which have recently been created and registered will be blocked. These could be an indicator of suspicious  activity as malicious users often create a new domain to temporarily hold data or host services which are used to control 'bots'
 
 ## Department baselines
 
  The Department applie baseline filtering for services which are not suitable or applicable for business use.
 
- - Category
-
- - Category
-
+- Category ???
+- Category ???
 
 ## Logging and monitoring
 
 The Department will log and monitor all Internet traffic both from Department-issued devices and 3rd-party devices which are used to carry out work on behalf of the Department. Information which is gathered is not routinely inspected, but will be made available as appropriate for any investigations as appropriate and within the Department's standard HR and IT policies.
 
 ## Processes to manage exceptions
-
-
 
 ![Process for managing URL blocks](images/URL-Block-Process.jpg)
 
