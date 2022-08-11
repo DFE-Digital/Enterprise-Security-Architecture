@@ -1,5 +1,5 @@
 
-# Web Filtering Briefing Note
+# External Identities Briefing Note
 
 | Document Information |
 ------------------------|
