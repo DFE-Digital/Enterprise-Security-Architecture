@@ -62,7 +62,7 @@ The DfE's standard Windows devices all include biometric authentication via eith
 - Enforce password lockout after 6 bad passwords
 - Reset failed login attempts after 60 minutes
 - Account will lockout for 60 minutes
-- Password must meet complexity requirements
+- No complexity requirements to support the use of passphrases
 
 ### Service/functional accounts
 
