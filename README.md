@@ -10,9 +10,9 @@ Artefacts within this repository are intended for:
 1. Architects starting to develop new solutions, seeking guidance and advice to ensure that these are developed in-line with the Department, Government and Industry best practives
 2. Vendors and 3rd party suppliers who need to understand standard working practices and guidelines when working with the Department and its services
 
-### Types of artefacts
+## Types of artefacts
 
-#### Guidance
+### Guidance
 
 Guidance is [here](https://github.com/DFE-Digital/Enterprise-Security-Architecture/tree/main/Guidance)
 
@@ -26,7 +26,7 @@ Guidance is [here](https://github.com/DFE-Digital/Enterprise-Security-Architectu
 
 **Intended audience** - All DfE users, contractors and Managed Service Providers working on behalf of the DfE
 
-#### Briefing Notes
+### Briefing Notes
 
 Briefing Notes are [here](https://github.com/DFE-Digital/Enterprise-Security-Architecture/tree/main/Briefing-Notes)
 
@@ -40,7 +40,7 @@ Briefing Notes are [here](https://github.com/DFE-Digital/Enterprise-Security-Arc
 
 **Intended audience** - All DfE users, contractors and Managed Service Providers working on behalf of the DfE
 
-#### Job Descriptions
+### Job Descriptions
 
 Job Descriptions are [here](https://github.com/DFE-Digital/Enterprise-Security-Architecture/tree/main/Job-Descriptions)
 
@@ -50,7 +50,7 @@ Job Descriptions are [here](https://github.com/DFE-Digital/Enterprise-Security-A
 
 **Intended audience** - C&IS teams and other DfE teams with similar job roles
 
-#### Guidelines
+### Guidelines
 
 Guidelines are [here](https://github.com/DFE-Digital/Enterprise-Security-Architecture/tree/main/Principles)
 
@@ -64,7 +64,7 @@ Guidelines are [here](https://github.com/DFE-Digital/Enterprise-Security-Archite
 
 **Intended audience** - DfE product and delivery teams, DfE service providers and contractors
 
-#### Tier2 Policies
+### Tier2 Policies
 
 Guidelines are [here](https://github.com/DFE-Digital/Enterprise-Security-Architecture/tree/main/Tier2-Policies)
 
