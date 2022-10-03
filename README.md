@@ -52,7 +52,7 @@ Job Descriptions are [here](https://github.com/DFE-Digital/Enterprise-Security-A
 
 ### Guidelines
 
-Guidelines are [here](https://github.com/DFE-Digital/Enterprise-Security-Architecture/tree/main/Principles)
+Guidelines are [here](https://github.com/DFE-Digital/Enterprise-Security-Architecture/tree/main/Guidelines)
 
 **Guidelines** are:
 
