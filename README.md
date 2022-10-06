@@ -77,3 +77,31 @@ Guidelines are [here](https://github.com/DFE-Digital/Enterprise-Security-Archite
 * Consists of background and rationale for specific policy elements and settings, and how the Tier1 policy is applied and adhered to
 
 **Intended audience** - All DfE users, contractors and Managed Service Providers working on behalf of the DfE
+
+## Relationship of artefacts
+
+Arteacts created by the Security Architecture team are informed and supported by existing standards and frameworks used across other Government Departments and the IT industry. We will re-use and cross-reference exisisting guidance at all times and augment with relevant content for the Department.
+
+### Architecture artefacts
+
+Security Architecture artefacts (Guidelines, Briefing Notes, Guidance and Patterns) are part of an overall hierarchy of artefacts used within the Department.
+
+![*Architecture artefactss and relationships*](images/architecture-artefacts.png)
+
+The relationship between the artefacts is hierarchical and cumulative, meaning that the top-level artefacts inform the next level of artefacts and so on.
+
+The security architecture artefacts will therefore reference and leverage the higher-level standards and principles and provide the security-specific lens to ensure that delivery and support teams using these standards, principles and guidelines are creating and supporting secure services.
+
+### Policy artefacts
+
+The Security Architecture team work alongside the InfoSec profession to co-develop the Department's Information Security policies within the ISMS.
+
+Policies created for the Department are informed and supported by existing standards and frameworks provided by central government and the IT industry.
+
+![*Policy artefactss and relationships*](images/policy-artefacts.png)
+
+The relationship is hierarchical and cumulative, meaning that the top-level policies and standards inform the Department's policies.
+
+The Tier 1 policy is developed and maintained by InfoSec within the Department and contains the high-level details of the specific policy area.
+
+The Tier 2 policy is developed and maintained by the Security Architecture team, and provides the next level of detail for the policy, including the specific details of how to implement the policy.
