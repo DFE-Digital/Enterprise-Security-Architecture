@@ -52,7 +52,7 @@ Job Descriptions are [here](https://github.com/DFE-Digital/Enterprise-Security-A
 
 ### Guidelines
 
-Guidelines are [here](https://github.com/DFE-Digital/Enterprise-Security-Architecture/tree/main/Principles)
+Guidelines are [here](https://github.com/DFE-Digital/Enterprise-Security-Architecture/tree/main/Guidelines)
 
 **Guidelines** are:
 
@@ -77,6 +77,7 @@ Guidelines are [here](https://github.com/DFE-Digital/Enterprise-Security-Archite
 * Consists of background and rationale for specific policy elements and settings, and how the Tier1 policy is applied and adhered to
 
 **Intended audience** - All DfE users, contractors and Managed Service Providers working on behalf of the DfE
+<<<<<<< HEAD
 
 ## Relationship of artefacts
 
@@ -105,3 +106,5 @@ The relationship is hierarchical and cumulative, meaning that the top-level poli
 The Tier 1 policy is developed and maintained by InfoSec within the Department and contains the high-level details of the specific policy area.
 
 The Tier 2 policy is developed and maintained by the Security Architecture team, and provides the next level of detail for the policy, including the specific details of how to implement the policy.
+=======
+>>>>>>> 96a0c2c0d6cdbfdf297b7ecdf25b676dc6ca2735
