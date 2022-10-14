@@ -7,7 +7,7 @@
 | Created: 2022-03-22 |
 | Domain: Security |
 | Author: pete.dingwall@education.gov.uk |
-| References: PRI-SEC005 - Working Remotely |
+
 
 ## Guidelines to support users working remotely
 
