@@ -77,7 +77,6 @@ Guidelines are [here](https://github.com/DFE-Digital/Enterprise-Security-Archite
 * Consists of background and rationale for specific policy elements and settings, and how the Tier1 policy is applied and adhered to
 
 **Intended audience** - All DfE users, contractors and Managed Service Providers working on behalf of the DfE
-<<<<<<< HEAD
 
 ## Relationship of artefacts
 
