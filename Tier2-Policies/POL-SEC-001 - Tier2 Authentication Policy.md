@@ -77,21 +77,25 @@ The DfE's standard Windows devices all include biometric authentication via eith
 
 ## Self-Service
 
-**Self-Service Password Reset** will be **enforced** for all user accounts
+**Self-Service Password Reset** will be **available** for all user accounts
+
+**Self-Service Account Unlock** will be **available** for all user accounts. This will allow users to unlock their accounts via self-service instead of waiting for the 60 minute automatic unlock specified in the policy.
 
 ## Multi-Factor Authentication
 
-**MFA will be enforced for all accounts**, with **FIDO2 enabled** to enable multiple options for authentication factors
+**MFA will be available for all accounts**, with **FIDO2 enabled** to enable multiple options for authentication factors
 
 ### Methods for MFA
 
 MFA will be provided via the following methods:
 
 1. Authenticator app on mobile phone (either prompt or One Time Passcode)
-2. SMS one-time passcode on mobile phone
+2. SMS one-time passcode on mobile phone (deprecated)
 3. Physical FIDO2 Token
 
 The preferred and recommended solution for users will be the Authenticator App, as this offers multiple methods of authentication, does not require further investment and is more secure than SMS.
+
+*The SMS Auth Factor is identified as **deprecated** to prepare for the anticipated removal as a factor in the future, due to the potential of spoofing*
 
 Physical FIDO2 Tokens will be provided for users who do not have access to a mobile phone or cannot use a mobile phone app due to specific needs.
 
@@ -123,14 +127,30 @@ Windows requires a PIN to be set when first enabling Biometric Authentication. T
 ## Identity Protection
 **AuzreAD Identity Protection** will be enabled and risk policies applied to trigger appropriate activities for risky logins
 
-## Risk-based authentication policies
-
->> ***To-Do - Agree risk policies for triggers and events***
-
-## SIEM integration
-
->> ***To-Do - Agree which events will be forwarded to SIEM and what will the SOC do with them***
+## Password Protection
+**AzureAD Password Protection** will be enabled for all accounts to ensure that users cannot select easily guessed and vulnerable passwords.
 
 ## Joiner/Mover/Leaver Processes
 
->> ***To-Do - Agree policy settings for accounts to be disabled after inactivity***
+1. Checks are carried out at present by the Department's operational teams for inactive accounts and will be unaffected by this policy
+2. Inactive accounts will be disabled but not removed at present due to ongoing enquiries across the Department. This will be updated once the enquiry has concluded
+
+---
+## Future planned updates to the policy
+
+### Risk-based authentication
+
+1. Define risk policies, triggers and events
+
+2. Categorise account types and appropriate risk policies to apply
+
+### SIEM integration
+
+1. Define which authentication events will be forwarded to SIEM
+
+2. Define suitable actions for the SOC and operational teams
+
+### Joiner/Mover/Leaver
+
+1. Define activities which are carried out for inactive accounts
+2. Track how enquiries which will impact the retention of accounts are captured and updated

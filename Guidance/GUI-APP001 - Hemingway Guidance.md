@@ -2,10 +2,10 @@
 
 | Category: Guidance |
 ------------------------|
-| Created: 2022-03-04 |
+| Created: October 2022 |
 | Domain: Security |
 | Author: pete.dingwall@education.gov.uk |
-| References: GUI-SEC002 - Hemingway Guidance |
+| References: GUI-APP001 - Hemingway Guidance |
 ---
 
 ## Guidance for using Hemingway
@@ -14,8 +14,7 @@
 
 * You should only use the browser-based version of Hemingway. You should not download the paid-for app as it may require additional permissions and access to DfE devices.
 
-* You should only use Hemingway for content that is intended for the public domain. Do not use the Hemingway on content that is marked as **OFFICIAL SENSITIVE, SECRET OR TOP SECRET**. 
-
+* You should only use Hemingway for content that is intended for the public domain. Do not use the Hemingway on content that is marked as **OFFICIAL SENSITIVE, SECRET** or **TOP SECRET**.  Do not use Hemingway if you are unsure about the classification of your content. 
 [DfE Guidance for Security classifications and document handling](https://educationgovuk.sharepoint.com/sites/how-do-i/SitePages/security-handling-information.aspx#security-classifications)
 
 * Do not use Hemingway if you are unsure about the classification of your content.
@@ -36,4 +35,6 @@ If Hemingway is unavailable, please use one of the other approved tools below:
 
 **Note** - Read and Write requires a purchased license for use and approval via a recent Occupational Health assessment.
 
-If you have any questions about other editing tools, please email xx.  
+If you have any questions about other editing tools, please email Andy Jones, Head of Design, in the first instance to discuss needs, at andy.jones@education.gov.uk.
+
+You can also visit the [Digital Accessibility](https://educationgovuk.sharepoint.com/sites/lvewp00043) Hub on the intranet.
