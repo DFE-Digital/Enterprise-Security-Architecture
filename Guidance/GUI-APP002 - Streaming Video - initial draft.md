@@ -6,7 +6,7 @@ Created: December 2022 |
 Domain: Security |
 Author: paul.fitzgibbons@education.gov.uk |
 References: GUI-APP002 - Streaming to External Platforms using RTMP |
-
+---
 
 ## Guidance for Streaming Video to External Broadcast/Distribution Channels
 Microsoft Teams provides the ability to stream meetings to external audiences using 3rd party websites such as Youtube and LinkedIn.
