@@ -1,12 +1,12 @@
 # Streaming Video Guidance
 
 ---
-Category: Guidance |
---------------------
-Created: December 2022 |
-Domain: Security |
-Author: paul.fitzgibbons@education.gov.uk |
-References: GUI-APP002 - Streaming to External Platforms using RTMP |
+| Category: Guidance |
+------------------------|
+| Created: December 2022 |
+| Domain: Security |
+| Author: paul.fitzgibbons@education.gov.uk |
+| References: GUI-APP002 - Streaming to External Platforms using RTMP |
 ---
 
 ## Guidance for Streaming Video to External Broadcast/Distribution Channels
@@ -18,8 +18,6 @@ The user who wants to stream to an external audience needs to be added to the co
 [DfE Guidance for Security classifications and document handling](https://educationgovuk.sharepoint.com/sites/how-do-i/SitePages/security-handling-information.aspx#security-classifications)
 
 * Do not stream content for external broadcast if you are unsure about the classification of your content.
-
-* You *must* not share your RTMP "key".
 
 * You should check the Terms and Conditions of the 3rd party service you are using to ensure it is suitable for the content.
 
