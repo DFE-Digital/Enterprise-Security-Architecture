@@ -1,13 +1,13 @@
-# Tier 2 Authentication Policy
+# Tier 3 Authentication Policy
 
-| Category: Tier 2 Policy
+| Category: Tier 3 Policy
 ------------------------|
 | Expires: 2022-07-01
 | Domain: Security
 | References: ISPS020 - Authentication Policy
 ---
 
-# Tier 2 Policy - Authentication
+# Tier 3 Policy - Authentication
 
 This is part of the hierarchy of policies from the main ISMS Policy Suite.
 

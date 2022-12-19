@@ -105,3 +105,50 @@ The relationship is hierarchical and cumulative, meaning that the top-level poli
 The Tier 1 policy is developed and maintained by InfoSec within the Department and contains the high-level details of the specific policy area.
 
 The Tier 2 policy is developed and maintained by the Security Architecture team, and provides the next level of detail for the policy, including the specific details of how to implement the policy.
+
+## Naming standard
+
+The following naming standard is used for all artefacts created by the Security Architecture team.
+
+
+
+### Guidance
+| Type | Prefix | Type of artefact | Area |
+| --- | ---| ---| ---|
+| GUI| SEC | three figure numeric | Security|
+| GUI| IDE | three figure numeric | Identity|
+| GUI| APP | three figure numeric | Application|
+| GUI| EUC | three figure numeric | EUC|
+| GUI| PLT | three figure numeric | Platform/Cloud|
+---
+
+### Briefing
+| Type | Prefix | Type of artefact | Area |
+| --- | ---| ---| ---|
+| BRF| SEC | three figure numeric | Security|
+| BRF| IDE | three figure numeric | Identity|
+| BRF| APP | three figure numeric | Application|
+| BRF| EUC | three figure numeric | EUC|
+| BRF| PLT | three figure numeric | Platform/Cloud|
+| BRF| STR | three figure numeric | Strategic|
+---
+
+### Guideline
+| Type | Prefix | Type of artefact | Area |
+| --- | ---| ---| ---|
+| GDL| SEC | three figure numeric | Security|
+| GDL| IDE | three figure numeric | Identity|
+| GDL| APP | three figure numeric | Application|
+| GDL| EUC | three figure numeric | EUC|
+| GDL| PLT | three figure numeric | Platform/Cloud|
+---
+
+### Pattern
+| Type | Prefix | Type of artefact | Area |
+| --- | ---| ---| ---|
+| PAT| SEC | three figure numeric | Security|
+| PAT| IDE | three figure numeric | Identity|
+| PAT| APP | three figure numeric | Application|
+| PAT| EUC | three figure numeric | EUC|
+| PAT| PLT | three figure numeric | Platform/Cloud|
+
