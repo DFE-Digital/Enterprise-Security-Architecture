@@ -32,7 +32,7 @@ The Information Security Team within Cyber and Information and Security Division
 
 # DfE Top Thirteen ITHC Findings (last updated 18/01/2023)
 Addressing these issues **AHEAD** of carrying out an ITHC will:
-* Allow ITHC test teams to focus on more of the things that matter
+* Allow ITHC test teams to focus on identifying unknown / new vulnerabilities resulting in the production of a more focussed report
 
 * Reduce the burden on support teams to ??what??
 
