@@ -11,7 +11,7 @@
 ## Who is this guidance for?
 This guidance is aimed at Schools
 IF you are looking for MFA guidance for services and suppliers please use
-[MFA Guidance for Suppliers](GDL-IDE003 - MFA Guidance-External.md)
+[MFA Guidance for Suppliers](/GDL-IDE003 - MFA Guidance-External.md)
 
 ## Introduction and Background
 
