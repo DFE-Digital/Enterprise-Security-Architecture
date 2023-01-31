@@ -11,7 +11,7 @@
 ## Who is this guidance for?
 This guidance is aimed at DfE Services
 IF you are looking for MFA guidance for services please use
-[MFA Guidance for Schools](GDL-IDE003 - MFA Guidance-Schools.md)
+[MFA Guidance for Schools](https://github.com/DFE-Digital/Enterprise-Security-Architecture/blob/main/Guidelines/GDL-IDE003%20-%20MFA%20Guidance-Schools.md)
 
 
 ## Introduction and Background
