@@ -9,7 +9,7 @@
 ---
 
 ## Who is this guidance for?
-This guidance is aimed at Schools
+This guidance is aimed at Schools.
 
 If you are looking for MFA guidance for services and suppliers please use: 
 [MFA Guidance for Suppliers/External Use](https://github.com/DFE-Digital/Enterprise-Security-Architecture/blob/main/Guidelines/GDL-IDE003%20-%20MFA%20Guidance-External.md)
