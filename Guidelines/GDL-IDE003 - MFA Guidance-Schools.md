@@ -1,4 +1,4 @@
-# Multi-Factor Authentication
+# Multi-Factor Authentication - Schools
 
 | Category: Guidelines |
 ------------------------|
