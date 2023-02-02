@@ -11,7 +11,7 @@
 ## Introduction
 
 Identity within these guidelines refers to how our services utilise user identities to authenticate and authorise to services, and how we design and build services to ensure consistency and re-use.
-p
+
 Consistent use of identity platforms provides a foundation to develop joined-up end-to-end user journeys across our services, and the delivery of tailored solutions and access privileges which are linked to the user's role and aligned to their needs.
 
 Guidance is also provided for the secure administration and management of our platforms and services, ensuring that access granted to systems is conscious and  appropriate, is granted only for the time required for the specific activity and is logged and audited.
@@ -29,6 +29,8 @@ Consumers for the Department's services are aligned to three main identity segme
 ## Use of the guidelines
 
 The following guidelines are provided to guide projects and teams when creating or procuring solutions for use by the Department's users or consumers. The guidelines will be used to create a framework for projects to operate within and to demonstrate alignment with best practice.
+
+
 
 **Aligment and exceptions** to the principles will be reviewed as part of assurance processes with the security and architecture professions to streamline governance, Exceptions will be approved or declined as relevant, with all decisions tracked with rationale for future reference.
 
