@@ -8,10 +8,9 @@
 | Author: paul.fitzgibbons@education.gov.uk |
 | References: GDL-SEC004 - ITHC Common Findings |
 
-
 ## Introduction and Background
 
-Systems and Services within DfE need assurance that they have been built and are being maintained securely. 
+Systems and Services within DfE need assurance that they have been built and are being maintained securely.
 
 Part of this assurance takes the form of an annual (or more frequent) IT Health Check (ITHC). This is time bound and typically consists of a mix of vulnerability scannning, penetration testing, and configuration review.
 
@@ -27,7 +26,6 @@ If you are looking for information on how to get an ITHC.
 
 The Information Security Team within Cyber and Information and Security Division manage a call off contract for ITHC resource - further details [here](https://educationgovuk.sharepoint.com/sites/how-do-i/SitePages/security-it-health-check-services.aspx#external-security-resources).
 
-
 **Updates or modifications** to the principles can be requested initially via the [Cyber and Information Security Divison](mailto://CIS.DELIVERY@education.gov.uk?subject=Architecture_Guidelines_ITHC), and in the future with standard updates and iterations via GitHub.
 
 # DfE Top Thirteen ITHC Findings (last updated 18/01/2023)
@@ -39,44 +37,42 @@ Addressing these issues **AHEAD** of carrying out an ITHC will:
 * Provides a level of assurance that your service is operating securely (either to your SRO or to Security Teams within the department) - please note that following this guidance does **NOT** replace the need for an ITHC
 
 tl;dr (more detail below this list!)
-1.	Insecure TLS/SSL Configuration
-2.	Verbose Server Headers
-3.	Missing HTTP Security Headers
-4.	Concurrent Logins Permitted
-5.	Outdated or Vulnerable Software
-6.	Missing Operating System Updates
-7.	Azure Storage Account Misconfiguration
-8.	SMB Signing Not Required
-9.	Windows Security Options Configuration
-10.	Insecure Cryptographic Configuration
-11.	Lack of Rate Limiting
-12.	SQL Server Authentication Configuration
-13.	Windows Audit Policy Configuration
 
+1. Insecure TLS/SSL Configuration
+2. Verbose Server Headers
+3. Missing HTTP Security Headers
+4. Concurrent Logins Permitted
+5. Outdated or Vulnerable Software
+6. Missing Operating System Updates
+7. Azure Storage Account Misconfiguration
+8. SMB Signing Not Required
+9. Windows Security Options Configuration
+10. Insecure Cryptographic Configuration
+11. Lack of Rate Limiting
+12. SQL Server Authentication Configuration
+13. Windows Audit Policy Configuration
 
 ## 1. Insecure TLS/SSL Configuration
 
 *Data in transit must be protected from interception or modification.*
 
-### Why? 
+### Why?
 
 Use of outdated or insecure encryption puts the data flowing over network links at risk.
 
-### How? 
+### How?
 
 * Follow NCSC TLS Best Practice guidance.
 [Using Transport Layer Security to protect data - NCSC.GOV.UK](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data)
 * Examples:
-    * Disable insecure protocols (TLS 1.0, TLS 1.1 and SSL)
-    * Use only TLS 1.2 or above
-    * etc
+  * Disable insecure protocols (TLS 1.0, TLS 1.1 and SSL)
+  * Use only TLS 1.2 or above
+  * etc
 * Use web application firewalls with appropriate configuration
 
 * [Windows IIS Crypto](https://www.nartac.com/Products/IISCrypto/)
 
 * [Linux - hardening TLS](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sec-hardening_tls_configuration)
-
-
 
 ## 2. Verbose Server Headers
 
@@ -94,12 +90,14 @@ Knowing the exact type of server in use allows an attacker  to  determine  any  
 
 * Configuration of web servers
 
-    * Use hardened server builds if using IaaS
-    * [Example - Remove Unwanted Response Headers - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/iis-support-blog/remove-unwanted-http-response-headers/ba-p/369710)
+  * Use hardened server builds if using IaaS
+  * [Example - Remove Unwanted Response Headers - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/iis-support-blog/remove-unwanted-http-response-headers/ba-p/369710)
 
 ## 3. Missing HTTP Security Headers
 
-*HyperText Transfer Protocol (“HTTP”) security headers are directives that can be returned by a web application when  responding to a request from a client. These headers can instruct a client  browser  on  specific  methods  of  handling  application data  which  can  include  such functionality  as  determining  scripts  that  can  be  run,  forcing  encryption  to  be  used  for communications, or enabling browser security functions to prevent against common attacks.*
+*HyperText Transfer Protocol (“HTTP”) security headers are directives that can be returned by a web application when  responding to a request from a client.*
+
+*These headers can instruct a client  browser  on  specific  methods  of  handling  application data  which  can  include  such functionality  as  determining  scripts  that  can  be  run,  forcing  encryption  to  be  used  for communications, or enabling browser security functions to prevent against common attacks.*
 
 ### Why?
 
@@ -122,11 +120,15 @@ The Strict Transport Security header provides a security enhancement that forces
 
 ## 4. Concurrent Logins Permitted
 
-*Permitting the user of an application to login more than once with the same set of credentials increases the risk of account compromise. *
+*Permitting the user of an application to login more than once with the same set of credentials increases the risk of account compromise.*
 
 ### Why?
 
-If attacker access is gained to a user account, the legitimate user is unlikely to observe that their credentials have been compromised if they are able to continue to work as normal. Any account compromise occurring in this manner will also impede any investigative efforts due to the difficulty in attributing specific actions to either the owner of the account, or the attacker using the account-owner’s credentials.A  further  risk  arises  from  the  possibility  of  login  concurrency  causing  data  corruption.  If changes are made by the same account, on the same records, at a very similar time then there is the risk of competing actions causing information to be overwritten, or corrupted.
+If attacker access is gained to a user account, the legitimate user is unlikely to observe that their credentials have been compromised if they are able to continue to work as normal.
+
+Any account compromise occurring in this manner will also impede any investigative efforts due to the difficulty in attributing specific actions to either the owner of the account, or the attacker using the account-owner’s credentials.
+
+A further  risk  arises  from  the  possibility  of  login  concurrency  causing  data  corruption.  If changes are made by the same account, on the same records, at a very similar time then there is the risk of competing actions causing information to be overwritten, or corrupted.
 
 ### How? 
 
@@ -144,7 +146,7 @@ If attacker access is gained to a user account, the legitimate user is unlikely 
 
 ### Why?
 
-Vulnerabilities arising from outdated or vulnerable software may permit an attacker to deny the use of a platform to legitimate users, steal confidential data from a system, or potentially execute code against a system in order to compromise it in its entirety. 
+Vulnerabilities arising from outdated or vulnerable software may permit an attacker to deny the use of a platform to legitimate users, steal confidential data from a system, or potentially execute code against a system in order to compromise it in its entirety.
 
 ### How? 
 
@@ -158,11 +160,13 @@ Vulnerabilities arising from outdated or vulnerable software may permit an attac
 
 ## 6. Missing Operating System Updates
 
-*Software installed within an enterprise requires regular and timely updates in order to reduce the  risk  of  compromise  from  attack.  *
+*Software installed within an enterprise requires regular and timely updates in order to reduce the  risk  of  compromise  from  attack.*
 
 ### Why?
 
-A  failure  to  incorporate  third-party  software  into  the patching  cycle  (as  opposed  to  patching  only  host  operating  systems)  greatly  increases  the prospect of a successful attack. Vulnerabilities arising from outdated or vulnerable software may permit an attacker to deny the use of a platform to legitimate users, steal confidential data from a system, or potentially execute code against a system in order to compromise it in its entirety.
+A  failure  to  incorporate  third-party  software  into  the patching  cycle  (as  opposed  to  patching  only  host  operating  systems)  greatly  increases  the prospect of a successful attack.
+
+Vulnerabilities arising from outdated or vulnerable software may permit an attacker to deny the use of a platform to legitimate users, steal confidential data from a system, or potentially execute code against a system in order to compromise it in its entirety.
 
 ### How? 
 
@@ -208,9 +212,9 @@ Signing  of  SMB  traffic  allows  for  the  recipient  of  any  SMB communicati
 
 * SMB signing should be required for all communications between networked hosts. This can be configured through Windows group policy under the setting “Digitally sign communications (always)” and setting it to “Enabled” for both Microsoft network client and Microsoft network server communications. 
 
-    * This setting can be located within the group policy editor under the following location: 
+  * This setting can be located within the group policy editor under the following location: 
 
-    * Computer Configuration–>Windows Settings–>Security Settings–>Local Policies–>Security Options
+  * Computer Configuration–>Windows Settings–>Security Settings–>Local Policies–>Security Options
 
 ## 9. Windows Security Options Configuration
 
