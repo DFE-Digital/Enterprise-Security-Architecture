@@ -1,3 +1,4 @@
 *.doc
 *.docx
 *.html
+.DS_Store
