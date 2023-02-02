@@ -34,9 +34,9 @@ The Information Security Team within Cyber and Information and Security Division
 Addressing these issues **AHEAD** of carrying out an ITHC will:
 * Allow ITHC test teams to focus on identifying unknown / new vulnerabilities resulting in the production of a more focussed report
 
-* Reduce the burden on support teams to ??what??
+* Reduce the burden on support teams
 
-* ??provide some level of assurance that your service is operating securely (either to your SRO or to Security Teams within the department) - please note that following this guidance does **NOT** replace the need for an ITHC??
+* Provides a level of assurance that your service is operating securely (either to your SRO or to Security Teams within the department) - please note that following this guidance does **NOT** replace the need for an ITHC
 
 tl;dr (more detail below this list!)
 1.	Insecure TLS/SSL Configuration
@@ -64,17 +64,18 @@ Use of outdated or insecure encryption puts the data flowing over network links 
 
 ### How? 
 
-* ?? Disable insecure protocols (TLS 1.0, TLS 1.1 and SSL)
-
-* ?? Use only TLS 1.2 or above
-
-* ?? Use web application firewalls with appropriate configuration
+* Follow NCSC TLS Best Practice guidance.
+[Using Transport Layer Security to protect data - NCSC.GOV.UK](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data)
+* Examples:
+    * Disable insecure protocols (TLS 1.0, TLS 1.1 and SSL)
+    * Use only TLS 1.2 or above
+    * etc
+* Use web application firewalls with appropriate configuration
 
 * [Windows IIS Crypto](https://www.nartac.com/Products/IISCrypto/)
 
 * [Linux - hardening TLS](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sec-hardening_tls_configuration)
 
-* ??
 
 
 ## 2. Verbose Server Headers
@@ -85,15 +86,16 @@ Use of outdated or insecure encryption puts the data flowing over network links 
 
 Knowing the exact type of server in use allows an attacker  to  determine  any  known  vulnerabilities  that  may  be  used  against  it  and  will significantly aid in the selection of any appropriate exploits. A number of application servers will, by default, respond to a client request with data regarding the software running on the server, in the form of an HTTP response header.
 
-### How? (Heading 3)
+### How? 
 
-* ?? Within the Software Development Lifecycle
+* Within the Software Development Lifecycle
 
-* ?? Configuration within your application
+* Configuration within your application
 
-* ?? Configuration of web servers
+* Configuration of web servers
 
-* ?? In Web Application Firewall Rulesets
+    * Use hardened server builds if using IaaS
+    * [Example - Remove Unwanted Response Headers - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/iis-support-blog/remove-unwanted-http-response-headers/ba-p/369710)
 
 ## 3. Missing HTTP Security Headers
 
@@ -105,36 +107,36 @@ It  should  be  noted  that  enabling  HTTP  security  headers  will  not  provi
 
 ### How? 
 
-* ?? Strict-Transport-Security:
+* Strict-Transport-Security:
 The Strict Transport Security header provides a security enhancement that forces a client web browser to connect to a site over secure HTTP (“HTTPS”) only. This is known as HTTP Strict Transport Security (or “HSTS”). It further instructs the browser to remember the restriction for a specific period of time. It provides a measure of protection against the interception of data in transit (also known as “Man-in-the-Middle” attacks).
 
-* ?? Content-Security-Policy: The Content Security Policy (“CSP”) header defines content sources that are trusted and approved by the browser to load specific resources such as scripts. The header also defines how loaded resources may behave. The header assists in defending against cross-site scripting (“XSS”) and other code execution attacks.
+* Content-Security-Policy: The Content Security Policy (“CSP”) header defines content sources that are trusted and approved by the browser to load specific resources such as scripts. The header also defines how loaded resources may behave. The header assists in defending against cross-site scripting (“XSS”) and other code execution attacks.
 
-* ?? X-Frame-Options: The X Frame Options header prevents a site from loading iframes, preventing possible “Clickjacking” attacks. Clickjacking is an attack where seemingly benigncontent is reproduced within the context of a site controlled by a malicious party. Through using transparent or invisible content, a user appears to be interacting with trusted content, yet actually be undertaking completely different actions.
+* X-Frame-Options: The X Frame Options header prevents a site from loading iframes, preventing possible “Clickjacking” attacks. Clickjacking is an attack where seemingly benigncontent is reproduced within the context of a site controlled by a malicious party. Through using transparent or invisible content, a user appears to be interacting with trusted content, yet actually be undertaking completely different actions.
 
-* ?? X-XSS-Protection: The X XSS Protection header is designed to detect and assist in protecting against cross-site scripting (“XSS”) attacks. However, most modern browsers ignore this header now as having it on can introduce additional security issues. The header should therefore be set to off.X-XSS-Protection: 0
+* X-XSS-Protection: The X XSS Protection header is designed to detect and assist in protecting against cross-site scripting (“XSS”) attacks. However, most modern browsers ignore this header now as having it on can introduce additional security issues. The header should therefore be set to off.X-XSS-Protection: 0
 
-* ?? X-Content-Type-Options: The X Content Type Options header is intended to prevent a browser from sniffing a response away from the declared content type of a specified resource. It assists in reducing the possibility of a drive-by download attack. In such an attack, a user may assume that they are downloading a legitimate and trusted resource. An appropriately placedattacker may be able to intercept such a request, and replace the original resource with malicious content.
+* X-Content-Type-Options: The X Content Type Options header is intended to prevent a browser from sniffing a response away from the declared content type of a specified resource. It assists in reducing the possibility of a drive-by download attack. In such an attack, a user may assume that they are downloading a legitimate and trusted resource. An appropriately placedattacker may be able to intercept such a request, and replace the original resource with malicious content.
 
-* ?? HSTS Header:The HSTS header should always have its configuration set to: max-age=31536000; includeSubDomains; preload.  This will ensure that the header is doing its job to provide the endpoint maximum security within its requests.
-
-* ?? Any others??
+* HSTS Header:The HSTS header should always have its configuration set to: max-age=31536000; includeSubDomains; preload.  This will ensure that the header is doing its job to provide the endpoint maximum security within its requests.
 
 ## 4. Concurrent Logins Permitted
 
-*The  ability  to  accurately  identify  the  vendor  and  version  number  of  software  running  on  a server is of high importance to an attacker.*
+*Permitting the user of an application to login more than once with the same set of credentials increases the risk of account compromise. *
 
 ### Why?
 
-Knowing the exact type of server in use allows an attacker  to  determine  any  known  vulnerabilities  that  may  be  used  against  it  and  will significantly aid in the selection of any appropriate exploits. A number of application servers will, by default, respond to a client request with data regarding the software running on the server, in the form of an HTTP response header.
+If attacker access is gained to a user account, the legitimate user is unlikely to observe that their credentials have been compromised if they are able to continue to work as normal. Any account compromise occurring in this manner will also impede any investigative efforts due to the difficulty in attributing specific actions to either the owner of the account, or the attacker using the account-owner’s credentials.A  further  risk  arises  from  the  possibility  of  login  concurrency  causing  data  corruption.  If changes are made by the same account, on the same records, at a very similar time then there is the risk of competing actions causing information to be overwritten, or corrupted.
 
 ### How? 
 
-* ?? In Web Application Firewall Rulesets
+* In Web Application Firewall Rulesets
 
-* ?? Configuration within your application
+* Configuration within your application
 
-* ?? Configuration of web servers
+* Configuration of web servers
+
+* [OWASP Session Management Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Session_Management_Cheat_Sheet.md)
 
 ## 5. Outdated or Vulnerable Software
 
@@ -146,29 +148,29 @@ Vulnerabilities arising from outdated or vulnerable software may permit an attac
 
 ### How? 
 
-* ?? Use DfE approved software/tools ??does this need to link to somewhere??
+* Use DfE approved software/tools
 
-* ?? Ensure that there is a maintenance requirements are documented and ensure there is a plan in place for the service. 
+* Ensure that there is a maintenance requirements are documented and ensure there is a plan in place for the service. 
 
-* ?? Use roadmaps provided by services and suppliers to plan for updates and upgrades
+* Use roadmaps provided by services and suppliers to plan for updates and upgrades
 
-* ?? [Microsoft Product Lifecycle Information](https://learn.microsoft.com/en-us/lifecycle/products/)
+* [Microsoft Product Lifecycle Information](https://learn.microsoft.com/en-us/lifecycle/products/)
 
 ## 6. Missing Operating System Updates
 
-*The  ability  to  accurately  identify  the  vendor  and  version  number  of  software  running  on  a server is of high importance to an attacker.*
+*Software installed within an enterprise requires regular and timely updates in order to reduce the  risk  of  compromise  from  attack.  *
 
 ### Why?
 
-Knowing the exact type of server in use allows an attacker  to  determine  any  known  vulnerabilities  that  may  be  used  against  it  and  will significantly aid in the selection of any appropriate exploits. A number of application servers will, by default, respond to a client request with data regarding the software running on the server, in the form of an HTTP response header.
+A  failure  to  incorporate  third-party  software  into  the patching  cycle  (as  opposed  to  patching  only  host  operating  systems)  greatly  increases  the prospect of a successful attack. Vulnerabilities arising from outdated or vulnerable software may permit an attacker to deny the use of a platform to legitimate users, steal confidential data from a system, or potentially execute code against a system in order to compromise it in its entirety.
 
 ### How? 
 
-* ?? In Web Application Firewall Rulesets
+* Use managed domains for IaaS
 
-* ?? Configuration within your application
+* Use centrally managed server builds
 
-* ?? Configuration of web servers
+* Ensure your service is covered by enterprise patching policies
 
 ## 7. Azure Storage Account Misconfiguration
 
@@ -180,11 +182,15 @@ Misconfiguration of Azure Storage Security can increase the attack surface of th
 
 ### How? 
 
-* ?? Disable public traffic
+* Encrypt blob storage
 
-* ?? Ensure that secure transfer is enabled
+* Disable public access
 
-* ?? [Review Microsoft guidance](https://learn.microsoft.com/en-us/azure/storage/blobs/security-recommendations)
+* Require Secure Transfer
+
+* Restrict network access using firewalls, network rules or private endpoints
+
+* [Review Microsoft guidance](https://learn.microsoft.com/en-us/azure/storage/blobs/security-recommendations)
 
 ## 8. SMB Signing Not Required
 
@@ -196,17 +202,15 @@ Signing  of  SMB  traffic  allows  for  the  recipient  of  any  SMB communicati
 
 ### How? 
 
-* ?? Apply appropriate Windows Server Policies
+* Use hardened server builds
 
-* ?? Ensure servers are domain joined and that servers have appropriate group policies applied
-
-* ?? Is this an Operations Task ??
+* Ensure servers are domain joined and that servers have appropriate group policies applied
 
 * SMB signing should be required for all communications between networked hosts. This can be configured through Windows group policy under the setting “Digitally sign communications (always)” and setting it to “Enabled” for both Microsoft network client and Microsoft network server communications. 
 
-* This setting can be located within the group policy editor under the following location: 
+    * This setting can be located within the group policy editor under the following location: 
 
-* Computer Configuration–>Windows Settings–>Security Settings–>Local Policies–>Security Options
+    * Computer Configuration–>Windows Settings–>Security Settings–>Local Policies–>Security Options
 
 ## 9. Windows Security Options Configuration
 
@@ -217,6 +221,10 @@ Signing  of  SMB  traffic  allows  for  the  recipient  of  any  SMB communicati
 The security options contain  groupings  of  security  policy  settings  that  can  be  applied  to  hosts  within  the environment  in  order  to  provide  specific  security  functionality,  or  to  provide  additional hardening against attack.
 
 ### How? 
+
+* Use hardened server builds
+
+* Ensure servers are domain joined and that servers have appropriate group policies applied
 
 * [Microsoft Security Options](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/security-options)
 
@@ -230,11 +238,11 @@ Whilst supporting a more generic configuration allows compatibility for a greate
 
 ### How? 
 
-* ?? Domain join IaaS servers to a domain under active management
+* Domain join IaaS servers to a domain under active management
 
-* ?? Ensure appropriate and up to date Windows Group Policies are applied
+* Ensure appropriate and up to date Windows Group Policies are applied
 
-* ?? Configure standalone or non-domain joined servers appropriately
+* Configure standalone or non-domain joined servers appropriately
 
 * [Windows IIS Crypto](https://www.nartac.com/Products/IISCrypto/)
 
@@ -242,19 +250,20 @@ Whilst supporting a more generic configuration allows compatibility for a greate
 
 ## 11. Lack of Rate Limiting
 
-*The  ability  to  accurately  identify  the  vendor  and  version  number  of  software  running  on  a server is of high importance to an attacker.*
+*Rate-limiting is used in APIs to limit the number of requests that can be made to the endpoint, once this limit is reached,servicesshould be denied to the user.*
 
 ### Why?
 
-Knowing the exact type of server in use allows an attacker  to  determine  any  known  vulnerabilities  that  may  be  used  against  it  and  will significantly aid in the selection of any appropriate exploits. A number of application servers will, by default, respond to a client request with data regarding the software running on the server, in the form of an HTTP response header.
-
+With a lack of rate-limiting,an attacker is able to repeat requests an unlimited numberof times leading to an associated drain on the resources of the server, potentially resulting in a denial-of-service ("DoS") attack.
 ### How? 
 
-* ?? In Web Application Firewall Rulesets
+* In Web Application Firewall Rulesets
 
-* ?? Configuration within your application
+* Configuration within your application
 
-* ?? Configuration of web servers
+* Configuration of web servers
+
+* Use of one time tokens
 
 ## 12. SQL Server Authentication Configuration
 
