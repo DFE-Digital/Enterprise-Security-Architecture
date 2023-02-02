@@ -1,4 +1,4 @@
-# Guidelines Title (Heading 1)
+# ITHC Common Findings
 
 | Document Information |
 ---|
