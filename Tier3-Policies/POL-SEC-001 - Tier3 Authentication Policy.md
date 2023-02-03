@@ -116,7 +116,7 @@ MFA prompts will be triggered automatically for additional authentication user w
 2. A user attempts to access a higher-privilege system
 3. A user's login is identified as higher-risk due to a unknown location or logging in outside of normal working hours
 4. A user's account is identified as risky or compromised
-5. The DfE is in a heigtened risk situation
+5. The DfE is in a heightened risk situation
 
 ## Biometric Authentication
 
