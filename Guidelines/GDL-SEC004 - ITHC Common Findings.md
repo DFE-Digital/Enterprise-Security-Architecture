@@ -170,7 +170,9 @@ Vulnerabilities arising from outdated or vulnerable software may permit an attac
 
 ### How? 
 
-* Use managed domains for IaaS
+* Ensure IaaS servers are domain joined to an approved, managed DfE domain (i.e. DEAD, TEAD, PPAD, REDPPAD, AD and REDAD) - these all benefit from consistent policies applied by the Cyber Security Team
+
+* If it is not possible to join to an approved, managed domain  request policies from Cyber Security.
 
 * Use centrally managed server builds
 
@@ -208,7 +210,9 @@ Signing  of  SMB  traffic  allows  for  the  recipient  of  any  SMB communicati
 
 * Use hardened server builds
 
-* Ensure servers are domain joined and that servers have appropriate group policies applied
+* Ensure IaaS servers are domain joined to an approved, managed DfE domain (i.e. DEAD, TEAD, PPAD, REDPPAD, AD and REDAD) - these all benefit from consistent policies applied by the Cyber Security Team
+
+* If it is not possible to join to an approved, managed domain  request policies from Cyber Security.
 
 * SMB signing should be required for all communications between networked hosts. This can be configured through Windows group policy under the setting “Digitally sign communications (always)” and setting it to “Enabled” for both Microsoft network client and Microsoft network server communications. 
 
@@ -228,7 +232,10 @@ The security options contain  groupings  of  security  policy  settings  that  c
 
 * Use hardened server builds
 
-* Ensure servers are domain joined and that servers have appropriate group policies applied
+* Ensure IaaS servers are domain joined to an approved, managed DfE domain (i.e. DEAD, TEAD, PPAD, REDPPAD, AD and REDAD) - these all benefit from consistent policies applied by the Cyber Security Team
+
+* If it is not possible to join to an approved, managed domain  request policies from Cyber Security.
+
 
 * [Microsoft Security Options](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/security-options)
 
@@ -242,11 +249,9 @@ Whilst supporting a more generic configuration allows compatibility for a greate
 
 ### How? 
 
-* Domain join IaaS servers to a domain under active management
+* Ensure IaaS servers are domain joined to an approved, managed DfE domain (i.e. DEAD, TEAD, PPAD, REDPPAD, AD and REDAD) - these all benefit from consistent policies applied by the Cyber Security Team
 
-* Ensure appropriate and up to date Windows Group Policies are applied
-
-* Configure standalone or non-domain joined servers appropriately
+* If it is not possible to join to an approved, managed domain  request policies from Cyber Security.
 
 * [Windows IIS Crypto](https://www.nartac.com/Products/IISCrypto/)
 
@@ -279,7 +284,9 @@ SQL Server Authentication credentials are not centrally managed. Windows/AD Cred
 
 ### How? 
 
-* Ensure server is domain joined to a DfE approved and managed domain
+* Ensure IaaS servers are domain joined to an approved, managed DfE domain (i.e. DEAD, TEAD, PPAD, REDPPAD, AD and REDAD) - these all benefit from consistent policies applied by the Cyber Security Team
+
+* If it is not possible to join to an approved, managed domain  request policies from Cyber Security.
 
 * Ensure 'ServerAuthentication' Property is set to 'Windows Authentication Mode'
 
@@ -305,7 +312,9 @@ Not only can this information assist in troubleshooting day-to-day issues, but a
 
 ### How? 
 
-* Ensure IaaS servers are domain joined to an approved, managed DfE domain
+* Ensure IaaS servers are domain joined to an approved, managed DfE domain (i.e. DEAD, TEAD, PPAD, REDPPAD, AD and REDAD) - these all benefit from consistent policies applied by the Cyber Security Team
+
+* If it is not possible to join to an approved, managed domain  request policies from Cyber Security.
 
 * [Microsoft - Audit Policy Recommendations](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/audit-policy-recommendations)
 
