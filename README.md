@@ -64,15 +64,15 @@ Guidelines are [here](https://github.com/DFE-Digital/Enterprise-Security-Archite
 
 **Intended audience** - DfE product and delivery teams, DfE service providers and contractors
 
-### Tier2 Policies
+### Tier3 Policies
 
-Guidelines are [here](https://github.com/DFE-Digital/Enterprise-Security-Architecture/tree/main/Tier2-Policies)
+Guidelines are [here](https://github.com/DFE-Digital/Enterprise-Security-Architecture/tree/main/Tier3-Policies)
 
-**Tier 2 Policies** are:
+**Tier 3 Policies** are:
 
-* Aligned to a specific ISMS Tier 1 security policy
+* Aligned to a specific ISMS Tier 2 security policy
 
-* Provides the 'how' for the Tier 1 security policy with further details and specific settings
+* Provides the 'how' for the Tier 2 security policy with further details and specific settings
 
 * Consists of background and rationale for specific policy elements and settings, and how the Tier1 policy is applied and adhered to
 
@@ -92,6 +92,11 @@ The relationship between the artefacts is hierarchical and cumulative, meaning t
 
 The security architecture artefacts will therefore reference and leverage the higher-level standards and principles and provide the security-specific lens to ensure that delivery and support teams using these standards, principles and guidelines are creating and supporting secure services.
 
+* [GOV.UK Technology Code of Practice](https://www.gov.uk/guidance/the-technology-code-of-practice)
+* [GOV.UK Service Standard](https://www.gov.uk/service-manual/service-standard)
+* [DfE Architecture Principles](https://dfe-digital.github.io/architecture/principles/enterprise-architecture-principles/#enterprise-architecture-principles)
+
+
 ### Policy artefacts
 
 The Security Architecture team work alongside the InfoSec profession to co-develop the Department's Information Security policies within the ISMS.
@@ -102,9 +107,14 @@ Policies created for the Department are informed and supported by existing stand
 
 The relationship is hierarchical and cumulative, meaning that the top-level policies and standards inform the Department's policies.
 
-The Tier 1 policy is developed and maintained by InfoSec within the Department and contains the high-level details of the specific policy area.
+The Tier 2 policy is developed and maintained by InfoSec within the Department and contains the high-level details of the specific policy area.
 
-The Tier 2 policy is developed and maintained by the Security Architecture team, and provides the next level of detail for the policy, including the specific details of how to implement the policy.
+The Tier 3 policy is developed and maintained by the Security Architecture team, and provides the next level of detail for the policy, including the specific details of how to implement the policy.
+
+* [Cyber Essentials](https://www.ncsc.gov.uk/cyberessentials/overview)
+* [Government Functional Standard 007](https://www.gov.uk/government/publications/government-functional-standard-govs-007-security)
+* [ISO27001](https://www.iso.org/isoiec-27001-information-security.html)
+
 
 ## Naming standard
 
