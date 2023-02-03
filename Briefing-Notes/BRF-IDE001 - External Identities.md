@@ -7,7 +7,6 @@
 | Created: 2022-03-22 |
 | Domain: Security |
 | Author: pete.dingwall@education.gov.uk |
-| References: BRF-SEC002 - Web Filtering |
 
 ## Guidelines for the use of external identities
 
