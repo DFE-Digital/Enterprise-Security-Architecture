@@ -80,13 +80,13 @@ Guidelines are [here](https://github.com/DFE-Digital/Enterprise-Security-Archite
 
 ## Relationship of artefacts
 
-Arteacts created by the Security Architecture team are informed and supported by existing standards and frameworks used across other Government Departments and the IT industry. We will re-use and cross-reference exisisting guidance at all times and augment with relevant content for the Department.
+Artefacts created by the Security Architecture team are informed and supported by existing standards and frameworks used across other Government Departments and the IT industry. We will re-use and cross-reference exisisting guidance at all times and augment with relevant content for the Department.
 
 ### Architecture artefacts
 
 Security Architecture artefacts (Guidelines, Briefing Notes, Guidance and Patterns) are part of an overall hierarchy of artefacts used within the Department.
 
-![*Architecture artefactss and relationships*](images/architecture-artefacts.png)
+![*Architecture artefacts and relationships*](images/architecture-artefacts.png)
 
 The relationship between the artefacts is hierarchical and cumulative, meaning that the top-level artefacts inform the next level of artefacts and so on.
 
