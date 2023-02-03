@@ -56,7 +56,7 @@ The Department's web filtering service provides a number of categorisations whic
 
 This category includes the following:
 
-- Sites previously confirmed to be malware, phishing, or C2 sites
+- Sites previously confirmed to be malware, phishing, or C2 (Command and Control) sites
 - Unknown domains are classified as high-risk, pending classification by our web filtering provider
 - Sites that are associated with confirmed malicious activity.
 - Bulletproof ISP-hosted sites.
