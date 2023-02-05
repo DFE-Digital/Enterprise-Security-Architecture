@@ -113,7 +113,7 @@ The Tier 3 policy is developed and maintained by the Security Architecture team,
 
 * [Cyber Essentials](https://www.ncsc.gov.uk/cyberessentials/overview)
 * [Government Functional Standard 007](https://www.gov.uk/government/publications/government-functional-standard-govs-007-security)
-* [ISO27001](https://www.iso.org/isoiec-27001-information-security.html)
+* [Government Secure by Design Framework](https://www.security.gov.uk/guidance/secure-by-design/)
 
 
 ## Naming standard
