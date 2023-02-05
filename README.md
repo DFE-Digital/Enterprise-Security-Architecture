@@ -66,7 +66,7 @@ Guidelines are [here](https://github.com/DFE-Digital/Enterprise-Security-Archite
 
 ### Tier3 Policies
 
-Guidelines are [here](https://github.com/DFE-Digital/Enterprise-Security-Architecture/tree/main/Tier3-Policies)
+Tier 3 Policies are [here](https://github.com/DFE-Digital/Enterprise-Security-Architecture/tree/main/Tier3-Policies)
 
 **Tier 3 Policies** are:
 
