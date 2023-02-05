@@ -1,13 +1,13 @@
 # Guidance Title (Heading 1)
 
 ---
-Category: xxx |
-Created: 2022-03-04 |
-Domain: xxx |
-Author: xxx.xxx@education.gov.uk |
+| Category: xxx |
+--------------------|
+| Created: 2022-03-04 |
+| Domain: xxx |
+| Author: xxx.xxx@education.gov.uk |
 References: XXX-YYY000 - ZZZZZZZ |
 ---
-
 
 ## Introduction and Background (Heading 2)
 
