@@ -1,5 +1,10 @@
+# Ignore any exported files
 *.doc
 *.docx
 *.html
+
+# Ignore temporary files
 .DS_Store
+
+# Ignore the local Drafts folder
 /Drafts
