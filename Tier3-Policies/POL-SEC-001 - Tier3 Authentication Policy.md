@@ -108,15 +108,19 @@ MFA will be configured to require to 2 methods to reset:
 3. Mobile phone
 4. Office phone
 
-## Enforcement of MFA
+## Use of MFA
 
-MFA prompts will be triggered automatically for additional authentication user when:
+MFA will be applied for all users who have enrolled with passwordless authentication. MFA prompts will be triggered automatically for additional authentication when:
 
 1. A user logs in after a period of no access
 2. A user attempts to access a higher-privilege system
 3. A user's login is identified as higher-risk due to a unknown location or logging in outside of normal working hours
 4. A user's account is identified as risky or compromised
 5. The DfE is in a heightened risk situation
+
+*MFA will not be applied for users who have not enrolled with passwordless authentication, but will be enforced for users who access higher-privileged systems (item 2 above).*
+
+*Users who have not enrolled with passwordless authentication will need to reset their password if their account is identified as risky or compromised. (Item 4 above).*
 
 ## Biometric Authentication
 
