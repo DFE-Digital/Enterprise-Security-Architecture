@@ -59,6 +59,7 @@ Microsoft have a variety of storage services available.
 * Limit shared access signature (SAS) tokens to HTTPS connections only
 
 #### Azure Blobs - Identity and Access Management
+* Please also refer to [GDL-IDE001-Authentication-Principles](https://github.com/DFE-Digital/Enterprise-Security-Architecture/blob/main/Guidelines/GDL-IDE001-Authentication-principles.md)
 * Use Azure Active Directory (Azure AD) to authorize access to blob data
 * Keep in mind the principle of least privilege when assigning permissions to an Azure AD security principal via Azure RBAC
 * Use a user delegation SAS to grant limited access to blob data to clients
