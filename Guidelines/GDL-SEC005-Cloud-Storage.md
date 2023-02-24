@@ -10,13 +10,17 @@
 | GDL-IDE001-Authentication-principles |
 | GDL-SEC005-Cloud-Storage |
 
-tl;dr use Microsoft Azure for cloud storage services
+>tl;dr use Microsoft Azure for cloud storage services
 
 ## Working with Cloud Storage
 
 Cloud storage offers systems and users the ability to create, read, update and delete data, that would have traditionally been held on disk, tape or other formats, using the internet.
 
 This allows data to be accessed without geographical restrictions and takes advantages of the scalability and flexibility cloud service providers offer.
+
+>These guidelines focus on cloud storage used by systems hosted on cloud platforms, cloud storage for unstructured and/or direct end-user access will be covered in separate guidelines and guidance.
+
+>SQL and other database technologies are not in-scope for these guidelines, these will be covered in separate guidelines and guidance.
 
 ### Choosing the right tool for the right job
 
@@ -34,20 +38,45 @@ You should engage with [the architecture team](security.architecture@education.g
 
 **Updates or modifications** to the principles can be requested initially via the Architecture Community of Interest, and in the future with standard updates and iterations via GitHub.
 
-## 1. Microsoft Azure Storage
+## 1. Use the Department's standard cloud provider by default
+
+*Aligning to standard platforms ensures consistent use of services with integration and security built-in*
+
+### Why
+**The Department's strategic platform for storage is Microsoft Azure**. Utilising this platform ensures the Department can:
+
+* Protectively monitor services/systems
+* Apply centrally managed controls
+* Control costs related to cloud platforms
+* Apply suitable retention policies to satisfy legal and regulatory needs
+* Provide appropriate business continuity and disaster recovery capability
+
+Use of non-preferred platforms impacts on the Department's ability to achieve these goals and will also drive up costs with duplicated services and data ingress/egress costs
+
+### How
+
+* Follow guidance from architecture and operations team
+* Utilise existing and mature services which are already integrated with our security and monitoring systems
+
+## 2. Utilise appropriate storage services
 
 *Microsoft Azure is DfE's preferred platform for services and systems.*
 
 [Microsoft Azure Storage](https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction)
 
-Microsoft have a variety of storage services available.
+Microsoft have a variety of storage services available:
 
 * Azure Blobs: A massively scalable object store for text and binary data. Also includes support for big data analytics through Data Lake Storage Gen2.
+
 * Azure Files: Managed file shares for cloud or on-premises deployments.
-* Azure Elastic SAN (preview): A fully integrated solution that simplifies deploying, scaling, managing, and configuring a SAN in Azure.
-* Azure Queues: A messaging store for reliable messaging between application components.
-* Azure Tables: A NoSQL store for schemaless storage of structured data.
-* Azure Disks: Block-level storage volumes for Azure VMs.
+
+>**remove as in preview** Azure Elastic SAN (preview): A fully integrated solution that simplifies deploying, scaling, managing, and configuring a SAN in Azure.
+
+> * Azure Queues: A messaging store for reliable messaging between application components. **This isn't really a storage solution**
+
+> **Suggest that we keep DB technologies in a seperate set of guidelines** Azure Tables: A NoSQL store for schemaless storage of structured data.
+
+>**is the focus for this guideline PaaS or IaaS? Think we need to stick with one and cover IaaS separately** * Azure Disks: Block-level storage volumes for Azure VMs.
 
 ### Azure Blobs
 
@@ -101,7 +130,11 @@ Recommendation: Speak to Architecture and Infrastructure team
 
 ### Azure Elastic SAN
 
+>suggest remove this as currently in preview
+
 Recommendation: do not use services in preview monitor to see if they become generally available.
+
+>we need a general principle about cloud usage which states that preview features are not to be used, then we don't need to call out here.
 
 ### Azure Queues
 
@@ -122,6 +155,7 @@ Out of Scope for this document. Refer to support information on Sharepoint Intra
 ## 2. Amazon Web Services (AWS)
 
 **The Department's preferred platform for storage is Microsoft Azure**, this is where the majority of our data/information should be stored.  Use of non-preferred platforms impacts on the Department's ability to:
+
 * protectively monitor services/systems
 * Apply centrally managed controls
 * Control costs related to cloud platforms
@@ -131,6 +165,7 @@ Out of Scope for this document. Refer to support information on Sharepoint Intra
 ### Why?
 
 Poorly configured cloud storage can result in:
+
 * Inappropriate access to information
 * Unauthorised changes to information
 * Loss or deletion of information
