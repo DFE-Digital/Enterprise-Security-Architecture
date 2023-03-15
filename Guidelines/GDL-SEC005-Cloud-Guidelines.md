@@ -96,6 +96,12 @@ The use of non-standard cloud platforms will require delivery teams to provide t
 
 ## 4. Seek out vendor best practices and re-use
 
+*pithy statement*
+
+### Why?
+
+### How?
+
 ## 5. Choose the right tool for the right job
 
 *Just because you can, doesn't mean you should*
