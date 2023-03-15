@@ -47,7 +47,22 @@ Adherence to these standards within the Department ensures that we follow consis
 * Document and agree any non-compliance with the principles and how any non-compliance risks are mitigated
 * Track ongoing change to the principles and ensure that funding is available to apply any future changes or updates
 
-## 2. Use the Department's standard cloud provider by default
+## 2. Understand and consider the Cloud Shared Responsibility model
+
+*pithy statement*
+
+### Why?
+
+### How?
+
+![Cloud Shared Responsibility Model](../Guidelines/images/Cloud-responsibility-model.png)
+
+[NCSC Cloud Shared Responsibility Model](https://www.ncsc.gov.uk/collection/cloud/understanding-cloud-services/cloud-security-shared-responsibility-model)
+
+[Microsoft Cloud Shared Responsibility Model](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility)
+
+
+## 3. Use the Department's standard cloud provider by default
 
 *Aligning to standard platforms ensures consistent use of services with integration, operational oversight and security built-in*
 
@@ -79,7 +94,9 @@ The use of non-standard cloud platforms will require delivery teams to provide t
 * [4 - Evaluate Total Cost of Ownership](https://github.com/DFE-Digital/architecture/blob/master/principles/enterprise-architecture-principles.md#4-evaluate-total-cost-of-ownership)
 * [7 - Deliver a secure service](https://github.com/DFE-Digital/architecture/blob/master/principles/enterprise-architecture-principles.md#7-deliver-a-secure-service)
 
-## 3. Choose the right tool for the right job
+## 4. Seek out vendor best practices and re-use
+
+## 5. Choose the right tool for the right job
 
 *Just because you can, doesn't mean you should*
 
@@ -109,20 +126,42 @@ There may also be preferences to use services and capabilities which architects 
 
 * [13 - Minimise technical debt](https://github.com/DFE-Digital/architecture/blob/master/principles/enterprise-architecture-principles.md#13-minimise-technical-debt)
 
-## 3. Do not use preview features
+## 6. Do not use preview features
 
-*preview features are still being tested and may be removed by the cloud provider*
+*Preview features are still being tested and may be removed by the cloud provider*
 
-[Preview Features in Azure](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/preview-features?tabs=azure-portal)
+### Why?
 
-Test in dev/test, not for any workloads in pre-prod/prod or environments which have access to production data.
+Cloud providers provide access to 'preview' features which are under development by a product group. The provider may choose to allow access to test the service and gain feedback (either directly or via service telemetry) so they can continue to iterate the service prior to it reaching General Availability (GA).
 
-## 4. Use the Azure Resource Manager deployment model
+Some preview features may be pulled by the vendor in the future due to feedback or a change in strategy, they may also be provided free-of-charge during the preview period but then subject to an additional license charge when reaching GA, generating unplanned costs for the Department.
 
-## 5. Plan for migration from non-standard cloud platforms (AWS)
+It is also key to note that the vendor does not provide any suppport for preview features, so any service which uses a preview feature will be impacted if a preview feature is used and subsequently fails.
 
-## 6. Cloud shared responsibility model
+### How?
 
-![Cloud Shared Responsibility Model](../Guidelines/images/Cloud-responsibility-model.png)
+* Review the guidance from Microsoft for the managemnt of [Preview Features in Azure](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/preview-features?tabs=azure-portal)
 
-## 7. Seek out vendor best practices and re-use
+* Evaluate preview features in development or test environments to safely review features and benefits as part of a future strategyic activity to adopt the service or feature once it reaches GA
+
+* Do not use preview features for any workloads in pre-prod/prod or environments which have access to production data
+
+* Ensure that you understand any future pricing model for the preview feature and ensure that these costs are included in the budget plans for your service
+
+* Prepare for changes to or removal of preview features and ensure that you have a 'plan B' to ensure that services are not completely dependent on a specific preview feature
+
+## 7. Use the Azure Resource Manager deployment model
+
+*pithy statement*
+
+### Why?
+
+### How?
+
+## 8. Plan for migration from non-standard cloud platforms (AWS)
+
+*pithy statement*
+
+### Why?
+
+### How?
