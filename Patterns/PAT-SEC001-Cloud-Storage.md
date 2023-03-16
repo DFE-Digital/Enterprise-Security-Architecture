@@ -1,4 +1,4 @@
-# Cloud Storage
+# Cloud Storage Patterns
 
 | Document Information |
 ---|
@@ -38,40 +38,7 @@ You should engage with [the architecture team](security.architecture@education.g
 
 **Updates or modifications** to the principles can be requested initially via the Architecture Community of Interest, and in the future with standard updates and iterations via GitHub.
 
-## 1. Refer to the Level 1 guidance for Cloud Platforms
-
-*The Cloud Platforms guidelines provide the baseline security and best practices*
-
-### Why
-Level 1 guidelines have been created to provide broad security guidelines for the correct use of cloud platforms within the Department. These apply across all cloud platforms to provide a secure and consistent baseline.
-
-Applying these guidelines to architecture, design and deployment activities will simplify governance and compliance activities and allow teams to shift-left their assurance activities, reducing the burden on their teams and costs for the Department.
-
-### How
-
-* Follow the level 1 guidelines [here](../Guidelines/GDL-SEC005-Cloud-Guidelines.md)
-* Review these guidelines along with the more specific guidelines to ensure your service will meet the standard best practice configuration expected by the Department
-
-## 2. Utilise appropriate storage services
-
-*Prioritise use of storage services which have already been approved and integrated*
-
-### Why?
-
-Microsoft have a variety of storage services [available](https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction), many of which are specific to certain workloads, and others which can be used for different purposes depending on the need of your service.
-
-Some storage services are already in active use within the Department and have existing architecture patterns defined for their consistent use. Prioritising these existing services allows your service to take advantage of existing integration and service onboarding carried out previously.
-
-Using new or previously unused storage services places a burden on your service to operationalise this by working with operational and security teams to ensure that all standard logging and monitoring is in-place. There may also be integration challenges with new or previously unused storage services which your service will need to manage and resolve, which could add additional costs for your project.
-
-### How?
-
-* Consult the existing patterns for cloud storage [here](https://youtu.be/dQw4w9WgXcQ)
-* Review the use of specific cloud services with architecture colleagues via the architecture profession
-* If existing patterns do not cover your specific requirements for storage services ensure you engage with the architecture profession and the [security architecture team](security.architecture@education.gov.uk)
-
-
-
+## Patterns
 * Azure Blobs: A massively scalable object store for text and binary data. Also includes support for big data analytics through Data Lake Storage Gen2.
 
 * Azure Files: Managed file shares for cloud or on-premises deployments.

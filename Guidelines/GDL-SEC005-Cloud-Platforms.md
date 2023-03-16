@@ -7,8 +7,9 @@
 | Domain: Security |
 | Author: paul.fitzgibbons@education.gov.uk, pete.dingwall@education.gov.uk|
 | References: |
-| GDL-IDE001-Authentication-principles |
-| GDL-SEC005-Cloud-Storage |
+| [GDL-IDE001-Authentication-principles](../Guidelines/GDL-IDE001-Authentication-principles.md) |
+| [GDL-SEC006-Cloud-Storage](../Guidelines/GDL-SEC006-Cloud-Storage.md) |
+| [PAT-SEC001-Cloud-Storage](../Patterns/PAT-SEC001-Cloud-Storage.md)
 
 ## Working with Cloud Platforms
 
