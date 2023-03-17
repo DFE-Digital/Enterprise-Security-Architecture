@@ -7,10 +7,11 @@
 | Domain: Security |
 | Author: pete.dingwall@education.gov.uk |
 | References: |
-| GDL-IDE001-Authentication-principles |
-| GDL-SEC005-Cloud-Storage |
+| [GDL-IDE001-Authentication-principles](../Guidelines/GDL-IDE001-Authentication-principles.md) |
+| [GDL-SEC005-Cloud-Platforms](../Guidelines/GDL-SEC005-Cloud-Platforms.md) |
+| [GDL-SEC006-Cloud Storage](../Guidelines/GDL-SEC006-Cloud-Storage.md) |
 
-# Cloud Storage Patterns
+## Cloud Storage
 
 Cloud storage offers systems and users the ability to create, read, update and delete data, that would have traditionally been held on disk, tape or other formats, using the internet.
 
