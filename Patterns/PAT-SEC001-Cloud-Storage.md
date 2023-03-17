@@ -168,13 +168,3 @@ End-user, refer to the KIM documentation for best practice usage. Marked for dep
 * Consider using Amazon Macie with Amazon S3
 * Monitor AWS security advisories
 * Still reading, wouldn't it just be easier to use Azure Storage?
-
-## 3. Other Cloud Storage Providers
-
-* Dropbox
-* Google Drive
-* Google Cloud Storage
-* others not listed within this document
-
-Not supported
-Contact Architecture team **BEFORE** you start design/development work.
