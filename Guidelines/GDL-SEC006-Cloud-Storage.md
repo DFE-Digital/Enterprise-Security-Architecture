@@ -33,7 +33,7 @@ This guideline is intended for Civil Servants, contract/contingent workers and M
 
 This guideline is non-exhaustive in nature.  The rapid pace of development within the cloud means that new storage mechanisms may become available.  
 
-You should engage with [the architecture team](security.architecture@education.gov.uk) to discuss any novel approaches to storage **BEFORE** you start any use or development activity.
+You should engage with [the architecture team](mailto:security.architecture@education.gov.uk) to discuss any novel approaches to storage **BEFORE** you start any use or development activity.
 
 **Aligment and exceptions** to the principles will be reviewed as part of assurance processes with the security and architecture professions to streamline governance, Exceptions will be approved or declined as relevant, with all decisions tracked with rationale for future reference.
 
