@@ -20,7 +20,7 @@ These guidelines explain the types and levels of access provided for the Departm
 
 This will cover access from department-issued devices and bring-your-own, and will clarify how access will be granted to PaaS and IaaS workloads within the department's standard cloud platform.
 
-![Cloud component overview](../images/PAT-SEC002-Overview.png)
+![Cloud component overview](../Patterns/images/PAT-SEC002-Overview.png)
 
 The guidelines will also provide clear guidance for our users to understand which roles and access rights are provided at all times, and which are provided on a just-in-time and least-privilege basis.
 
@@ -56,7 +56,7 @@ Users will also be provided with access to the Azure Shell to allow the use of s
 
 >*Direct access to the portal and Azure shell is intended for the maintenance and support of platforms, and for incident resolution purposes. The use of the portal and shell for deployment activities is not permitted, any deployments into the Department's cloud platform should be via recognised and approved CI/CD pipelines with the approprise inline checks*
 
-![PaaS Access Pattern](../images/PAT-SEC002-PaaS-Access.png)
+![PaaS Access Pattern](../Patterns/images/PAT-SEC002-PaaS-Access.png)
 
 ### Devices
 
@@ -124,7 +124,7 @@ Users will also be provided with access to the Azure Shell to allow the use of s
 
 ### Overview of Pattern
 
-![IaaS Access Pattern](../images/PAT-SEC002-IaaS-Access.png)
+![IaaS Access Pattern](../Patterns/images/PAT-SEC002-IaaS-Access.png)
 
 ### Devices
 
