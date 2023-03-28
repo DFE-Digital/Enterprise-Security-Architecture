@@ -48,6 +48,7 @@ The DfE's standard Windows devices all include biometric authentication via eith
 - Minimum password length is 14 characters
 - Password history is set to 24 passwords
 - Minimum password age is 1 day
+- Password complexity **will be removed**
 - Maximum password age **will be removed**
 - Enforce password lockout after 6 bad passwords
 - Reset failed login attempts after 60 minutes
