@@ -1,4 +1,4 @@
-# Cloud Privileged Access
+# Cloud Platforms Access Patterns
 
 | Document Information |
 ---|
@@ -10,7 +10,7 @@
 | [GDL-IDE001-Authentication-principles](../Guidelines/GDL-IDE001-Authentication-principles.md) |
 | [GDL-SEC005-Cloud-Platforms](../Guidelines/GDL-SEC005-Cloud-Guidelines.md) |
 
-## Privileged Access to cloud platforms
+## Access to cloud platforms
 
 The Department follows a cloud-first strategy when purchasing or building services, and aligns the hosting, management and security for these services with our strategic cloud and identity provider.
 
@@ -35,6 +35,7 @@ This pattern is intended for Civil Servants, contract/contingent workers and Man
 Services inculded in these patterns are non-exhaustive in nature.  The rapid pace of development within the cloud means that new storage mechanisms may become available.
 
 ---
+
 > **Any services which are not included in these patterns are not approved for use and should not be used for any purpose within the Department. If you or your service team are using a service which is not included in this pattern you should plan to deprecate and remove this as soon as possible.**
 ---
 
@@ -60,7 +61,7 @@ Users will also be provided with access to the Azure Shell to allow the use of s
 
 ### Devices
 
-* This pattern supports access from DfE issued devices and unmanaged BYO devices.
+* This pattern supports access from DfE issued devices. Unmanaged BYO devices are not permitted access, with network connectivity constrained by a conditional access policy which only permits access from DfE-managed devices.
 
 ### Authentication
 
@@ -124,11 +125,19 @@ Users will also be provided with access to the Azure Shell to allow the use of s
 
 ### Overview of Pattern
 
+Accessing IaaS workloads is not possible directly from the Azure portal as an interactive session is required from either a remote desktop or secure shell. Microsoft provide a standard bastion service which is used as a central point from within the Azure environment to 'fan out' onto the IaaS workloads to carry out tasks and activities from the respective interactive shell.
+
+Once a user has successfully authenticated into the Azure portal they will have access to the Azure Bastion service and will be able to connect to the permitted IaaS workloads using the respective shell. Access to workloads will be restricted by VLANs to ensure that only the required access is permitted.
+
+Transport to the portal is encrypted end-to-end and can be accessed from any device with internet access and a supported web browser. Access once connected to the portal will be across the Azure management network and secured end-to-end.
+
+>*Direct access to IaaS workloads is intended for the maintenance and support of platforms, and for incident resolution purposes. The use of the portal and shell for deployment activities will be limited to agreed change windows and subject to change control*
+
 ![IaaS Access Pattern](../Patterns/images/PAT-SEC002-IaaS-Access.png)
 
 ### Devices
 
-* This pattern supports access from DfE issued devices and unmanaged BYO devices.
+* This pattern supports access from DfE issued devices. Unmanaged BYO devices are not permitted access, with network connectivity constrained by a conditional access policy which only permits access from DfE-managed devices.
 
 ### Authentication
 
@@ -136,7 +145,9 @@ Users will also be provided with access to the Azure Shell to allow the use of s
 
 * Guest accounts are not in-scope for this pattern
 
-* MFA may be required for specific services and roles, either at login or when requesting additional roles via Privileged Access Management (PAM)
+* MFA will be required for specific services and roles, either at login or when requesting additional roles via Privileged Access Management (PAM) due to the potential high-level of access provided to the IaaS workload
+
+* A separate login will be required to the IaaS workload which will be provided by **do we have a management AD?**
 
 * Identity Protection will be utilised to monitor for any anomalous or inappropriate access or account usage
 
@@ -148,7 +159,10 @@ Users will also be provided with access to the Azure Shell to allow the use of s
 
 * Authorisation will be granted based on least privilege principles, with sufficient permissions provided to allow the specific role(s) to be carried out
 
-* Roles will be granted on a just-in-time basis to ensure that users have the required access when they need it, but do not maintain it when not required
+* Roles will be used to grant access to the relevant bastion environments and will be granted on a just-in-time basis to ensure that users have the required access when they need it, but do not maintain it when not required
+
+* Access to IaaS workloads can be common across services within an environment but should not allow access across multiple environments
+   * i.e. Access to production IaaS workloads and UAT IaaS workloads should utilise two separate accounts to maintain separation of duties and separation of environments
 
 * Roles will be mostly self-approved, to allow flexibility and autonomy for the users whilst also ensuring that the use of privileged roles is conscious and audited
 
@@ -164,8 +178,9 @@ Users will also be provided with access to the Azure Shell to allow the use of s
 
 * Access to the following services will be logged and audited
   * Azure Portal
-  * Azure Shell
-  * Access to PaaS
+  * Azure Shell (if relevant or required)
+  * Access to the Bastion service
+  * Access to IaaS workloads
   * Elevation of roles via PAM
 * Alerts triggered in Identity Protection for anomalous behaviour will be logged and audited for future action. Repeated inappropriate behaviour will result in access being revoked
 
@@ -185,3 +200,4 @@ Users will also be provided with access to the Azure Shell to allow the use of s
   * Outcome 9 - Secure Technology and Digital Services
   * Outcome 11 - Secure Configuration
   * Outcome 12 - Shared Capabilities
+
