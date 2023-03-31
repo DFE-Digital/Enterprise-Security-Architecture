@@ -12,7 +12,7 @@
 
 ## Working with cloud permissions
 
-Need to apply cloud permissions appropriately, refer to indentity principles etc. Least privilege and JiT
+>Need to apply cloud permissions appropriately, refer to indentity principles etc. Least privilege and JiT
 
 ## Use of the guidelines
 
@@ -191,40 +191,3 @@ TBC has been used to identify roles which do not yet have a business need and wi
 >Provide guidance for teams to create specific roles aligned to their structure and based upon principles highlighted above.
 
 >Refer back to the access plane access to ensure that access is appropriate and from the approved devices
-
-![Azure roles and relationships](../Guidelines/images/GLD-SEC007-Azure-Roles-Overview.png)
-
-### Built-in roles
-
-**Classic Azure roles**
-
-|Azure role |Permissions |Notes |
----| ---| ---|
-Owner | Full access to all resources. Delegate access to others |The Service Administrator and Co-Administrators are assigned the Owner role at the subscription scope. Applies to all resource types.
-| Contributor |Create and manage all of types of Azure resources. Create a new tenant in Azure Active Directory. Can't grant access to others |Applies to all resource types.
-|Reader | View Azure resources |Applies to all resource types.
-User Access Administrator | Manage user access to Azure resources
-
-**Built-in role categories**
-
-|Role Group| Description | Team/Role type |
----| ---| ---|
-General | The classic Azure roles| Try not to use 
-Compute | Roles linked to IaaS compute platforms and components | Infrastructure teams |
-|Networking | Roles aligned to network-related activities such as managing VNets and DNS | Network teams |
-| Storage| Use for storage-related activities such as blobs, SAN and queues | Storage team |
-| Web | Roles linked to web and media services | Developers, content managers |
-| Containers | Roles used to deploy and configure containers and Kubernetes | Developers |
-| Databases | Roles used to configure and manage database platforms | DBAs |
-| Analytics | Roles used to review events and analytics | Analytics teams, security operators |
-| AI and Machine Learning| Roles used to manage data science services | DBAs, data scientists|
-| Internet of things |  Roles used to manage IoT services and deployment methods | Not used in the Department|
-| Mixed Reality | Roles used to manage services related to Microsoft's Mixed Reality platforms | Not used in the Department |
-| Integration |
-| Identity |
-| Security |
-| DevOps |
-| Monitor |
-| Management and Governance |
-| Virtual Desktop Infrastructure |
-| Other |
