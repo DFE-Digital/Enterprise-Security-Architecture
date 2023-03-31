@@ -12,7 +12,7 @@
 
 ## Working with cloud permissions
 
-Need to apply cloud permissions appropriately, refer to indentity principles etc. Least privilege and JiT
+>Need to apply cloud permissions appropriately, refer to indentity principles etc. Least privilege and JiT
 
 ## Use of the guidelines
 
