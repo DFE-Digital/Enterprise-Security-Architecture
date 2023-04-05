@@ -186,6 +186,37 @@ TBC has been used to identify roles which do not yet have a business need and wi
 
 ## Appendix A - Azure built-in roles
 
+The following section describes the built-in roles provided when deploying and managing services within Azure and how these are applied to the resources appropriately.
+
+Azure provides a hierarchy where permissions can be applied at multiple levels, with broad permissions being applied at the top level for Azure workloads (Management Group) and finer-grained permissions being applied to the subscription and resource groups within the subscription.
+
+![Azure Permission Hierarchy](../Guidelines/images/GLD-SEC007-Azure-Roles-Overview.png)
+
+The method of how these roles are applied is not dictated within these guidelines as it will depend on the structure of the team which is managing and supporting the relevant Azure workloads.
+
+Some larger teams will have specific groups within which are responsible for specific elements of a service whereas smaller teams will have multi-disciplinary teams which support many parts of a service, and the access model will be adapted and shaped to match the needs of the team.
+
+> Regardless of the team size and type, it is expected that the permissions applied to manage the relevant cloud resources will follow the principles outlined in the identity principles, adhering to least-privilege principles and just-in-time provision of permissions.
+
+>Adherence to these principles will need to be demonstrated as part of ongoing service assurance with non-compliance reported and escated if required.
+
+Roles will not be allocated permanently and will instead be granted on a just-in-time basis to ensure adherence with the least-privilege principle. 
+
+Where roles are generally required for BAU purposes as part of a normal working day they will be permitted to be made available for up to 8 hours, and most roles are configured with self-approval to ensure that they can be requested and allocated quickly and easily. Permanent roles are not assigned to also ensure that all usage of privileged roles is done so consciously and with a clear business need.
+
+### General roles vs specific roles
+
+General roles (also referred as 'classic' roles) are provided to enable general access to all resources within an Azure subscription. The broad nature of these general roles drives the need to protect and manage them appropriately. The service-specific roles only grant access to the specific permissions required (adhering to least-priciple) and therefore create a lower risk, meaning they can be allocated for longer periods of time and with less approval and oversight.
+
+**General Roles**
+
+| Role| Description | Approval | MFA | Time-limited|
+---| ---| ---| ---| --|
+| Owner | Grants full access to manage all resources and assign roles to other users **Will not be allocated to users** | admin-approved | hard-token | 2 hours|
+| Contributor| Grants full access to manage all resources, but does not allow assigning roles for other users | self-approved | soft-token| 2 hours|
+| Reader | Grants view access to all resources but does not allow any changes to be made | Self-approved | No| 8 hours|
+| User access administrator | Allows management of access to Azure Resources **Will not be allocated to users** |admin-approved| hard-token | 2 hours|
+
 >Provide details of the built-in roles for Azure and how they're used.
 
 >Provide guidance for teams to create specific roles aligned to their structure and based upon principles highlighted above.
