@@ -40,9 +40,11 @@ Azure provides a hierarchy where permissions can be applied at multiple levels, 
 
 ![Azure Permission Hierarchy](../Guidelines/images/GLD-SEC007-Azure-Roles-Overview.png)
 
-### AzureAD permissions and structure
+### Azure AD permissions and structure
 
-AzureAD provides a flatter structure for the provision and management of appropriate permissions for administrative roles and the management of SaaS applications provided as part of the Microsoft 365 platform. In a change to how Active Directory was structured (with Organisational Units), AzureAD has a single flat structure and instead uses groups as scoping boundaries. Groups are used to create Managed Units, and roles are applied to these groups to allow delegation of roles into specific groups of users and resources.
+AzureAD provides a flatter structure for the provision and management of appropriate permissions for administrative roles and the management of SaaS applications provided as part of the Microsoft 365 platform. In a change to how Active Directory was structured (with Organisational Units), AzureAD has a single flat structure and instead uses groups as scoping boundaries. Groups are used to create Administrative Units, and roles are applied to these groups to allow delegation of roles into specific groups of users and resources.
+
+![Azure AD Permission Hierarchy](../Guidelines/images/GDL-SEC007-admin-unit-overview.png)
 
 ### Role-based access controls and alignment to team structure
 
