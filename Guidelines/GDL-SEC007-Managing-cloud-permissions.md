@@ -12,7 +12,39 @@
 
 ## Working with cloud permissions
 
->Need to apply cloud permissions appropriately, refer to indentity principles etc. Least privilege and JiT
+Cloud platforms provide rich capabilities for the provision and managemet of appropriate permissions across workloads. The methods of creating and applying roles and permissions vary from platform to platform, but all provide the ability to adhere to the Department's principles and security best practices. Focus within this guideline is for the Department's Azure platform, however the key principles will apply to any cloud platform used by the Department.
+
+### Azure permissions and structure
+
+Azure provides a hierarchy where permissions can be applied at multiple levels, with broad permissions being applied at the top level for Azure workloads (Management Group) and finer-grained permissions being applied to the Subscription and Resource Groups within the subscription.
+
+![Azure Permission Hierarchy](../Guidelines/images/GLD-SEC007-Azure-Roles-Overview.png)
+
+### Azure AD permissions and structure
+
+AzureAD provides a flatter structure for the provision and management of appropriate permissions for administrative roles and the management of SaaS applications provided as part of the Microsoft 365 platform.
+
+In a change to how Active Directory was structured hierarchy (with Organisational Units), AzureAD has a single flat structure rather than a hierarchy and uses groups as scoping boundaries. Groups are used to create Administrative Units, and roles are applied to these groups to allow delegation of roles into specific groups of users and resources.
+
+![Azure AD Permission Hierarchy](../Guidelines/images/GDL-SEC007-admin-unit-overview.png)
+
+### Role-based access controls and alignment to team structure
+
+This guideline provides  general principles and links to other guidelines to support teams to define a RBAC structure which is aligned to industry best practices. The structure and permissions model provided by cloud platforms is designed to enable alignment with these best practices.
+
+The appendices of these guidelines lists the roles which are available in each platform, and how they can be used to meet the guidelines and align with best practices.
+
+The method of how these roles are applied is not dictated within these guidelines as it will depend on the structure of the team which is managing and supporting the relevant Azure workloads.
+
+Some larger teams will have specific groups within which are responsible for specific elements of a service whereas smaller teams will have multi-disciplinary teams which support many parts of a service, and the access model will be adapted and shaped to match the needs of the team.
+
+> Regardless of the team size and type, it is expected that the permissions applied to manage the relevant cloud resources will follow the principles outlined in the identity principles, adhering to least-privilege principles and just-in-time provision of permissions.
+
+>Adherence to these principles will need to be demonstrated as part of ongoing service assurance with non-compliance reported and escated if required.
+
+As a general principle, roles will not be allocated permanently and will instead be granted on a just-in-time basis to ensure adherence with the least-privilege principle. 
+
+Where roles are generally required for BAU purposes as part of a normal working day they will be permitted to be made available for up to 8 hours, and most roles are configured with self-approval to ensure that they can be requested and allocated quickly and easily. Permanent roles are not assigned to also ensure that all usage of privileged roles is done so consciously and with a clear business need.
 
 ## Use of the guidelines
 
@@ -30,37 +62,7 @@ You should engage with [the architecture team](mailto:security.architecture@educ
 
 **Updates or modifications** to the principles can be requested initially via the Architecture Community of Interest, and in the future with standard updates and iterations via GitHub.
 
-## Introduction
 
-Cloud platforms provide rich capabilities for the provision and managemet of appropriate permissions across workloads. The methods of creating and applying roles and permissions vary from platform to platform, but all provide the ability to adhere to the Department's principles and security best practices. Focus within this guideline is for the Department's Azure platform, however the key principles will apply to any cloud platform used by the Department. 
-
-### Azure permissions and structure
-
-Azure provides a hierarchy where permissions can be applied at multiple levels, with broad permissions being applied at the top level for Azure workloads (Management Group) and finer-grained permissions being applied to the Subscription and Resource Groups within the subscription.
-
-![Azure Permission Hierarchy](../Guidelines/images/GLD-SEC007-Azure-Roles-Overview.png)
-
-### Azure AD permissions and structure
-
-AzureAD provides a flatter structure for the provision and management of appropriate permissions for administrative roles and the management of SaaS applications provided as part of the Microsoft 365 platform. In a change to how Active Directory was structured (with Organisational Units), AzureAD has a single flat structure and instead uses groups as scoping boundaries. Groups are used to create Administrative Units, and roles are applied to these groups to allow delegation of roles into specific groups of users and resources.
-
-![Azure AD Permission Hierarchy](../Guidelines/images/GDL-SEC007-admin-unit-overview.png)
-
-### Role-based access controls and alignment to team structure
-
-The later appendices of these guidelines lists the roles which are available in each platform, and how they can be used.
-
-The method of how these roles are applied is not dictated within these guidelines as it will depend on the structure of the team which is managing and supporting the relevant Azure workloads.
-
-Some larger teams will have specific groups within which are responsible for specific elements of a service whereas smaller teams will have multi-disciplinary teams which support many parts of a service, and the access model will be adapted and shaped to match the needs of the team.
-
-> Regardless of the team size and type, it is expected that the permissions applied to manage the relevant cloud resources will follow the principles outlined in the identity principles, adhering to least-privilege principles and just-in-time provision of permissions.
-
->Adherence to these principles will need to be demonstrated as part of ongoing service assurance with non-compliance reported and escated if required.
-
-Roles will not be allocated permanently and will instead be granted on a just-in-time basis to ensure adherence with the least-privilege principle. 
-
-Where roles are generally required for BAU purposes as part of a normal working day they will be permitted to be made available for up to 8 hours, and most roles are configured with self-approval to ensure that they can be requested and allocated quickly and easily. Permanent roles are not assigned to also ensure that all usage of privileged roles is done so consciously and with a clear business need.
 
 **Using *scoping* capabilities in the cloud platform**
 
@@ -109,17 +111,19 @@ Utilising just-in-time access also ensures that the use of operational and admin
 
 ### Why?
 
-Inappropriate provision of access to operational and suport teams is a common attack vector used to gain access to an environment and then attempt to access other services across the Department (aka lateral movement). It is common for specific user types to be targeted due to the potential for them to have significant access to services, therefore it is key that we ensure that access is provided appropirately and only granted for the time period required. This ensures that even if an account is compromised it cannot be easily used to carry out malicious activity or enable access to other services and environments.
+Inappropriate provision of access to operational and suport teams is a common attack vector used to gain access to an environment and then attempt to access other services across the Department (aka lateral movement).
+
+It is common for specific user types to be targeted due to the potential for them to have significant access to services, therefore it is key that we ensure that access is provided appropirately and only granted for the time period required. This ensures that even if an account is compromised it cannot be easily used to carry out malicious activity or enable access to other services and environments.
 
 Where and how roles are applied to teams will vary depending on a number of factors, which will differ between teams and the services being managed. Some initial guidance is provided below to consider when planning and designing your RBAC model.
 
-* **Size of team** - how will roles be carried out across the teams and which team members will be responsible for which activities?
+* **Size of team** - how will roles be carried out across the teams and which team members will be responsible for which activities? Some smaller teams may have multi-disciplinary personnel, whereas larger teams will have dedicated resources carrying out a smaller number of roles.
 
-* **Role(s) carried out** - which roles will the team need access to so they can support and maintain the relevant services?
+* **Role(s) carried out** - which roles will the team need access to so they can support and maintain the relevant services? You should seek to apply roles where required for teams rather than providing broad and general roles.
 
-* **The number of environments** - how many environments are required for the service and which team members will need access to which environment?
+* **The number of environments** - how many environments are required for the service and which team members will need access to which environment? Do not seek to grant access to all environment from all team members, consider who needs access and ensure that only those who require access are provided with it.
 
-* **Environments shared with others** - are there shared services used by my team and service? What access do we need to this environment to effectively run and manage our services?
+* **Environments shared with others** - are there shared services used by my team and service? What access do we need to this environment to effectively run and manage our services? You may not be given full access to shared service environments and some roles may be carried out by the central team responsible for the shared service.
 
 * **Use of contingent and full-time staff** - consider how roles which provide broad and/or high-levels of access are allocated, and potential constraints with providing high-privileged roles to contingent staff
 
@@ -131,15 +135,15 @@ Where and how roles are applied to teams will vary depending on a number of fact
 
 * Adhere to vendor best practices (linky)
 
-* Utilise scoping for roles (Management Groups in Azure, Managed Units in AzureAD)
+* Utilise scoping for roles (Subscriptions and Resource Groups in Azure, Administrative Units in AzureAD) to ensure that roles are only applied in the specific scope of services or users
 
-* Apply roles at the correct level
+* Apply roles at the correct level. Using Subscriptions and Resource Groups as administrative boundaries allows appropriate application of access and permissions on a per-environment and per-service basis.
 
-* Adapt the RBAC structure as your team changes/evolves
+* Adapt the RBAC structure as your team changes/evolves. If your team grows or decides to outsource some elements of its work then the RBAC and support model will need to be updated to reflect this.
 
-* Document the structure with explanantion of how it's applied
+* Document the structure with explanantion of how it's applied. The structure will need to be reviewed by service assessors, security assurance or external audit so it's key to ensure that it's documented clearly with rationale for how and why permissions are applied
 
-* Be prepared for external scrutiny
+* Be prepared for external scrutiny and ensure that the method and model of providing access and allocating roles adheres to the principles and best practices within this guideline.
 
 * Commensurate roles in the different environments
 Being aware that there's only one AzureAD, so can't apply more permissive roles in different environments
@@ -291,16 +295,16 @@ General roles (also referred as 'classic' roles) are provided to enable general 
 |Databases | Roles for the management of database platforms and services | Database Administrators |
 |Analytics | Roles for the management of event hubs and log analytics | Service and security teams |
 |AI & Machine Learning | Roles for the management of Machine Learning and Cognitive Services platforms | Data Science teams |
-|Internet of Things |
-|Mixed Reality |
-|Integration |
-|Identity |
-|Security |
-|DevOps |
-|Monitor |
-|Management and Governance |
-|Virtual Desktop Infrastructure |
-|Other |
+|Internet of Things | Roles for the management of IoT platforms and services within Azure | Not currently used within the Department |
+|Mixed Reality | Roles for the management of services and devices related to Mixed Reality capabilities | Not currently used within the Department |
+|Integration | Roles for the management of APIs and Azure Service Bus | Data, integration and development teams |
+|Identity | Roles for the management of Azure AD Domain Services and Azure Managed Identities | Identity and Access Management & development teams |
+|Security | Roles for the management of Azure Key Vault, Azure Sentinel and Defender | Security Teams|
+|DevOps | Roles for the management of resources within Azure DevTest labs | Development teams |
+|Monitor | Roles for the management of Application Insights and Azure Monitor | Service and Security teams |
+|Management and Governance | Roles for management, automation and policy, and site recovery | Operational teams |
+|Virtual Desktop Infrastructure | Roles for the management of Azure Virtual Desktops | EUC team |
+|Other | Roles for the management of Digital Twins, Grafana and load-testing | Operational Teams |
 
 
 >Provide details of the built-in roles for Azure and how they're used.
