@@ -16,7 +16,8 @@ Service definitions are provided by the Cyber and Information Security Division 
 2. What is the scope of the service offering
 3. How they're requested
 4. What information is required by the team providing the service
-5. What the C&IS team will provide back to the service
+5. Expertise required by the requesting team
+6. What the C&IS team will provide back to the service
 
 ---
 
@@ -45,10 +46,16 @@ The time to complete the work will depend on the complexity of the request, the 
 The following information must be provided to support the service team to fulfill the request. All information is mandatory unless otherwise stated.
 
 - Name of the service being integrated for SSO
-- Design for the service 
-- A data flow diagram showing:
+- Design for the service
+- Evidence of assurance oversight from:
+  - Security
+  - Data Protection Office
+- A data flow diagram showing at least the following:
   - Where the service is hosted
+  - Trust boundaries
   - Connectivity between the service and other services and/or data stores as relevant
+  - Data being exchanged by the service
+  - Protocols used by the service
 - Authentication protocol used by the service
 - Relevant URLs for the SSO integration
 - Access to the application SME to configure the service
@@ -59,6 +66,14 @@ The following information must be provided to support the service team to fulfil
 - Authorisation information:
   - How is authorisation handled?
   - Will groups be required to manage access?
+
+#### **Expertise required**
+
+The requesting team will be expected to provide the following expertise to support the request:
+
+- Technical architecture to provide the design and overview of the service
+- SME support to provide the in-depth knowledge of the service. This could be an internal resource or the vendor providing the service
+
 
 #### **Output provided**
 
