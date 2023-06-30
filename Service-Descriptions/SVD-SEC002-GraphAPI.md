@@ -1,4 +1,4 @@
-# Security Service Definitions - Single Sign-on
+# Security Service Definitions - Microsoft GraphAPI Access
 
 | Document Information |
 ---|
@@ -22,17 +22,27 @@ Service definitions are provided by the Cyber and Information Security Division 
 
 ---
 
-### Single Sign-on (SSO)
+### Microsoft GraphAPI
 
 #### **Service Definition**
 
-The SSO service enables service teams to integrate an application into the Department's standard identity provider for civil servants and contractors working on behalf of the Department. This is also described as a Business-To-Enterprise (B2E) identity.
+GraphAPI is Microsoft's standard method of providing programmatic access to applications which are part of the Microsoft 365 and Azure ecosystem. User-level access is provided transparently as part of access to the relevant applications which have been licensed, but programmatic access requires specific permissions to be applied by the C&IS team which manages the AzureAD identity platform.
+
+![GraphAPI Overview](../Service-Descriptions/Images/SVD-SEC002-GraphAPI-Overview.png)
+
+Example uses for this type of access would be:
+
+- A SaaS application which needs to access Dynamics 365 for customer contact information
+- A Robotics Process Automation (RPA) task which needs to interact with multiple SharePoint platforms to automate a manual task
+- A  service which needs to gather information from multiple platforms for analytics purposes
 
 #### **Scope**
 
-The SSO service can be used for any web-based application which is used within the B2E identity segment, including internally-developed services and 3rd-party SaaS applications.
+The GraphAPI Access service can be used for any service which supports standard API integration.
 
-Services seeking to integrate into the SSO service must support either SAML2.0 or OIDC protocols.
+Access to the resources within the GraphAPI service must be granted based upon least-privilege so service owners will be expected to demonstrate how their access is constrained to the relevant information only.
+
+Services will need to support modern authentication methods (SAML V2.0, OIDC) to connect to the GraphAPI service and will require a functional account which is named appropriately.
 
 #### **How to request the service**
 
@@ -46,8 +56,11 @@ The time to complete the work will depend on the complexity of the request, the 
 
 The following information must be provided to support the service team to fulfill the request. All information is mandatory unless otherwise stated.
 
-- Name of the service being integrated for SSO
+- Name of the service(s) which requires GraphAPI access
+- Which application(s) will be accessed via GraphAPI
+- Which data fields will be accessed within each service
 - Design for the service
+- Evidence of adherence to [API Security Principles](../Guidelines/GDL-SEC001-API-Security-Principles.md)
 - Evidence of assurance oversight from:
   - Security
   - Data Protection Office
@@ -57,16 +70,7 @@ The following information must be provided to support the service team to fulfil
   - Connectivity between the service and other services and/or data stores as relevant
   - Data being exchanged by the service
   - Protocols used by the service
-- Authentication protocol used by the service
-- Relevant URLs for the SSO integration
-- Access to the application SME to configure the service
-- Identity claims required to be exchanged by the service
-- Users of the service:
-  - Internal users
-  - 3rd party users
-- Authorisation information:
-  - How is authorisation handled?
-  - Will groups be required to manage access?
+- Functional account(s) which will be used to provide access to the relevant GraphAPI endpoints
 
 #### **Expertise required**
 
@@ -74,9 +78,10 @@ The requesting team will be expected to provide the following expertise to suppo
 
 - Technical architecture to provide the design and overview of the service
 - SME support to provide the in-depth knowledge of the service. This could be an internal resource or the vendor providing the service
+- Data architecture support may be required, depending on the complexity of the integration
 
 #### **Output provided**
 
 The IDAM team will work with the service to configure and test the service to confirm that SSO is working as expected.
 
-Once the SSO integration work is completed, it is expected that there will be no further involvement from the IDAM team for ongoing management of the service, unless there is a signficant change which would require a change to the SSO integration.
+Once the GraphAPI integration work is completed, it is expected that there will be no further involvement from the IDAM team for ongoing management of the service, unless there is a signficant change which would require a change to the SSO integration.
