@@ -1,10 +1,11 @@
 # Tier 3 Authentication Policy
 
-| Category: Tier 3 Policy
-------------------------|
-| Expires: 2022-07-01
-| Domain: Security
-| References: ISPS020 - Authentication Policy
+| Category: Tier 3 Policy |
+| ------------------------ |
+| Expires: 2022-07-01 |
+| Domain: Security |
+| References: ISPS020 - Authentication Policy |
+| Document Status: **DRAFT** |
 ---
 
 # Tier 3 Policy - Authentication
