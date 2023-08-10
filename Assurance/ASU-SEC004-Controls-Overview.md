@@ -14,3 +14,9 @@
 [Control Group 2](../Assurance/ASU-CTG002-CIS-Control-Group2.md)
 
 [Control Group 3](../Assurance/ASU-CTG003-CIS-Control-Group3.md)
+
+[Control Group 4](../Assurance/ASU-CTG003-CIS-Control-Group4.md)
+
+[Control Group 5](../Assurance/ASU-CTG003-CIS-Control-Group5.md)
+
+[Control Group 6](../Assurance/ASU-CTG003-CIS-Control-Group6.md)
