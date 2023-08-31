@@ -23,21 +23,27 @@ This inventory includes assets connected to the infrastructure physically, virt
 
 ### Why it is required
 
-Inventory is important, gives us a full view of the estate etc.
+This is the key control which must be implemented fully to ensure that devices on the IT estate are known and well managed. Operations and security teams cannot support and secure the full estate if they do not have visibility of all devices.
 
 Link to NCSC's guidance, ISO27001 etc - know your estate, if you don't know your assets how can you secure etc.
 
 ### How it is achieved
 
-* CMDB
-* SBOMs
-* Integration via CI/CD
-* Pulling info from tooling
-  * SolarWinds
-  * Palo Alto
-  * Azure
+The outcome required is for all devices to be captured and maintained within a central repository. The method of achieving this is different depending on the type of device and should be aligned with processes and ways of working to ensure that it is easily achieved and managed. 
 
->Link to guideline goes here
+Service owners and delivery teams will be expected to select the optimal method to update and maintain their devices and demonstrate evidence of this.
+
+* The Config Management Database (CMDB) is the master repository for all devices wihtin the Department.
+* Software Bill Of Materian (SBOM) can be created and maintained as part of standard CI/CD processes to maintain the up-to-date view of software components and configuration for a service
+* CMDB can be updated programatically within a CI/CD pipeline to update and manage components as they're deployed and updated
+* Device information can be gathered directly from the master source for the relevant information
+  * Network Managment
+  * Device Management
+  * Cloud platforms
+
+![CMDB hierarchy and integration](../Assurance/Images/ASU-CTG001-CMDB-Hierarchy.png)
+
+*Compliance for this control is met when 100% of a services' assets are captured and maintained. Less than 100% of all assets will result in non-compliance with this control*
 
 ## Control 1.2
 
