@@ -13,7 +13,15 @@
 ---| ---| ---|
 |Applications	|Identify	|Establish and Maintain a Software Inventory
 
+### The Control
+
 Establish and maintain a detailed inventory of all licensed software installed on enterprise assets. The software inventory must document the title, publisher, initial install/use date, and business purpose for each entry; where appropriate, include the Uniform Resource Locator (URL), app store(s), version(s), deployment mechanism, and decommission date. Review and update the software inventory bi-annually, or more frequently.
+
+### Why it is required
+
+### How it is achieved
+
+>Link to guideline or process goes here if existing or planned
 
 ## Control 2.2
 
@@ -21,11 +29,19 @@ Establish and maintain a detailed inventory of all licensed software installed o
 ---| ---| ---|
 |Applications |Identify |Ensure Authorized Software is Currently Supported
 
+### The Control
+
 Ensure that only currently supported software is designated as authorized in the software inventory for enterprise assets.
 
 If software is unsupported, yet necessary for the fulfillment of the enterprise’s mission, document an exception detailing mitigating controls and residual risk acceptance.
 
 For any unsupported software without an exception documentation, designate as unauthorized. Review the software list to verify software support at least monthly, or more frequently.
+
+### Why it is required
+
+### How it is achieved
+
+>Link to guideline or process goes here if existing or planned
 
 ## Control 2.3
 
@@ -33,4 +49,12 @@ For any unsupported software without an exception documentation, designate as un
 ---| ---| ---|
 Applications | Respond |Address Unauthorized Software
 
+### The Control
+
 Ensure that unauthorized software is either removed from use on enterprise assets or receives a documented exception. Review monthly, or more frequently.
+
+### Why it is required
+
+### How it is achieved
+
+>Link to guideline or process goes here if existing or planned
