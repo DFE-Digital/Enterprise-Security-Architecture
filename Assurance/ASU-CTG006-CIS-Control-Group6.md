@@ -1,4 +1,4 @@
-# CIS Control 6
+# CIS Control 6 - Access Control Management
 
 | Document Information |
 ------------------------|
@@ -6,6 +6,13 @@
 | Created: 2022-03-22 |
 | Domain: Security |
 | Author: pete.dingwall@education.gov.uk |
+| Edits: paul.fitzgibbons@education.gov.uk |
+
+## Related Controls 
+This is covered in various other Security/Management/Assessment Frameworks such as:
+* [NCSC Cyber Assessment Framework (CAF) B2](https://www.ncsc.gov.uk/collection/caf/caf-principles-and-guidance/b-2-identity-and-access-control)
+* ISO27001:2022: A5.15, A5.16, A5.18, A5.16, A5.18, A6.5, A5.15, A6.7, A8.2
+* NIST 800-53: IA-2, IA-4, IA-5, AC-1, AC-2, AC-19
 
 ## Control 6.1
 
