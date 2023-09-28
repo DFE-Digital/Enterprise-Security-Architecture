@@ -11,8 +11,8 @@
 ## Related Controls 
 This is covered in various other Security/Management/Assessment Frameworks such as:
 * [NCSC Cyber Assessment Framework (CAF) A3](https://www.ncsc.gov.uk/collection/caf/caf-principles-and-guidance/a-3-asset-management)
-* ISO27001:2022: A5.9, A8.7, A8.19, A8.19
-* NIST 800-53: CA-7: Continuous Monitoring, CM-2: Baseline Configuration, CM-8: Information System Component Inventory, CM-10: Software Usage Restrictions, CM-11: User-Installed Software, SA-4: Acquisition Process, SC-18: Mobile Code, SC-34: Non-Modifiable Executable Programs, SI-4: Information System Monitoring, PM-5: Information System Inventory
+* ISO27001:2022: A5.9
+* NIST 800-53: CM-8, CM-7(1), MA-3, SA-22, CM-7(2), CM-8(3), CM-10, CM-11
 * ITIL 2011 KPIs: Information Security Management
 * ICO Protecting Data: Decommissioning of software or services
 
