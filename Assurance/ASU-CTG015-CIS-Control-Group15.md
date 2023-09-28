@@ -1,4 +1,4 @@
-# CIS Control 15
+# CIS Control 15 - Service Provider Management
 
 | Document Information |
 ------------------------|
@@ -6,7 +6,14 @@
 | Created: 2022-03-22 |
 | Domain: Security |
 | Author: pete.dingwall@education.gov.uk |
+| Edits: paul.fitzgibbons@education.gov.uk |
 
+## Related Controls 
+This is covered in various other Security/Management/Assessment Frameworks such as:
+* [NCSC Cyber Assessment Framework (CAF) A4](https://www.ncsc.gov.uk/collection/caf/caf-principles-and-guidance/a-4-supply-chain)
+* ISO27001:2022: A5.19
+* NIST 800-53: PM-30
+  
 ## Control 15.1
 
 | Asset Type | Security Function | Title| 
