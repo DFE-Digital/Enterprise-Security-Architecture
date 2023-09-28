@@ -1,4 +1,4 @@
-# CIS Control 14
+# CIS Control 14 - Security Awareness and Skills Training
 
 | Document Information |
 ------------------------|
@@ -6,6 +6,13 @@
 | Created: 2022-03-22 |
 | Domain: Security |
 | Author: pete.dingwall@education.gov.uk |
+| Edits: paul.fitzgibbons@education.gov.uk |
+
+## Related Controls 
+This is covered in various other Security/Management/Assessment Frameworks such as:
+* [NCSC Cyber Assessment Framework (CAF) B6](https://www.ncsc.gov.uk/collection/caf/caf-principles-and-guidance/b-6-staff-awareness-and-training)
+* ISO27001:2022: A5.10, A6.3, A6.8, A8.7
+* NIST 800-53: AT-1, AT-2, PM-13, AC-22
 
 ## Control 14.1
 
