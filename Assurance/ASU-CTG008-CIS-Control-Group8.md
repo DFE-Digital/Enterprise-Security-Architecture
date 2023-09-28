@@ -10,7 +10,7 @@
 
 ## Related Controls 
 This is covered in various other Security/Management/Assessment Frameworks such as:
-* [NCSC Cyber Assessment Framework (CAF) C1](https://www.ncsc.gov.uk/collection/caf/caf-principles-and-guidance/c-1-security-monitoring))
+* [NCSC Cyber Assessment Framework (CAF) C1](https://www.ncsc.gov.uk/collection/caf/caf-principles-and-guidance/c-1-security-monitoring)
 * ISO27001:2022: A8.6, A8.15, A8.20
 * NIST 800-53: AU-1, AU-2, AU-4, AU-7, AU-12
 
