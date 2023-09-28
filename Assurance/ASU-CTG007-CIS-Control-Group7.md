@@ -1,4 +1,4 @@
-# CIS Control 7
+# CIS Control 7 - Continuous Vulnerability Management
 
 | Document Information |
 ------------------------|
@@ -6,6 +6,14 @@
 | Created: 2022-03-22 |
 | Domain: Security |
 | Author: pete.dingwall@education.gov.uk |
+| Edits: paul.fitzgibbons@education.gov.uk |
+
+## Related Controls 
+This is covered in various other Security/Management/Assessment Frameworks such as:
+* [NCSC Cyber Assessment Framework (CAF) B1](https://www.ncsc.gov.uk/collection/caf/caf-principles-and-guidance/b-1-service-protection-policies-and-processes)
+* [NCSC Cyber Assessment Framework (CAF) B4](https://www.ncsc.gov.uk/collection/caf/caf-principles-and-guidance/b-4-system-security)
+* ISO27001:2022: A8.8
+* NIST 800-53: RA-5, RA-7, SI-2
 
 ## Control 7.1
 
