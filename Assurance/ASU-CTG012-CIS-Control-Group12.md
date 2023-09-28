@@ -1,4 +1,4 @@
-# CIS Control 12
+# CIS Control 12 - Network Infrastructure Management
 
 | Document Information |
 ------------------------|
@@ -6,6 +6,11 @@
 | Created: 2022-03-22 |
 | Domain: Security |
 | Author: pete.dingwall@education.gov.uk |
+| Edits: paul.fitzgibbons@education.gov.uk |
+
+## Related Controls 
+This is covered in various other Security/Management/Assessment Frameworks such as:
+* NIST 800-53: CM-8
 
 ## Control 12.1
 
