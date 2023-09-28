@@ -13,7 +13,7 @@
 This is covered in various other Security/Management/Assessment Frameworks such as:
 * [NCSC Cyber Assessment Framework (CAF) A3](https://www.ncsc.gov.uk/collection/caf/caf-principles-and-guidance/a-3-asset-management)
 * ISO27001:2022: A5.9, A8.8
-* NIST 800-53 CA-7: Continuous Monitoring, CM-8: Information System Component Inventory, IA-3: Device Identification and Authentication, SA-4: Acquisition Process, SC-17: Public Key Infrastructure Certificates, SI-4: Information System Monitoring, PM-5: Information System Inventory
+* NIST 800-53: CM-8, CM-8(1), PM-5, CM-8(3)
 * ITIL 2011 KPIs: Information Security Management
 * ICO Protecting Data: Inappropriate locations for processing data
 
