@@ -1,4 +1,4 @@
-# CIS Control 5
+# CIS Control 5 - Account Management
 
 | Document Information |
 ------------------------|
@@ -6,6 +6,13 @@
 | Created: 2022-03-22 |
 | Domain: Security |
 | Author: pete.dingwall@education.gov.uk |
+| Edits: paul.fitzgibbons@education.gov.uk |
+
+## Related Controls 
+This is covered in various other Security/Management/Assessment Frameworks such as:
+* [NCSC Cyber Assessment Framework (CAF) B2](https://www.ncsc.gov.uk/collection/caf/caf-principles-and-guidance/b-2-identity-and-access-control)
+* ISO27001:2022: A5.15, A5.16, A5.17, A8.2
+* NIST 800-53: AC-2, IA-5, AC-6
 
 ## Control 5.1
 
