@@ -1,4 +1,4 @@
-# CIS Control 17
+# CIS Control 17 - Incident Response Management
 
 | Document Information |
 ------------------------|
@@ -6,6 +6,13 @@
 | Created: 2022-03-22 |
 | Domain: Security |
 | Author: pete.dingwall@education.gov.uk |
+| Edits: paul.fitzgibbons@education.gov.uk |
+
+## Related Controls 
+This is covered in various other Security/Management/Assessment Frameworks such as:
+* [NCSC Cyber Assessment Framework (CAF) D1](https://www.ncsc.gov.uk/collection/caf/caf-principles-and-guidance/d-1-response-and-recovery-planning)
+* ISO27001:2022: A5.5, A5.6, A5.20, A5.24, A6.8
+* NIST 800-53: IR-1, IR-5, IR-6, IR-7, IR-8
 
 ## Control 17.1
 
