@@ -1,4 +1,4 @@
-# CIS Control 4
+# CIS Control 4 - Secure Configuration of Enterprise Assets and Software
 
 | Document Information |
 ------------------------|
