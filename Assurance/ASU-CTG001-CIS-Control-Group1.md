@@ -1,4 +1,4 @@
-# CIS Control 1
+# CIS Control 1 - Inventory and Control of Enterprise Assets
 
 | Document Information |
 ------------------------|
@@ -6,6 +6,16 @@
 | Created: 2022-03-22 |
 | Domain: Security |
 | Author: pete.dingwall@education.gov.uk |
+| Edits: paul.fitzgibbons@education.gov.uk |
+
+
+## Related Controls 
+This is covered in various other Security/Management/Assessment Frameworks such as:
+* [NCSC Cyber Assessment Framework (CAF) A3](https://www.ncsc.gov.uk/collection/caf/caf-principles-and-guidance/a-3-asset-management)
+* ISO27001:2022: A5.9, A8.8
+* NIST 800-53 CA-7: Continuous Monitoring, CM-8: Information System Component Inventory, IA-3: Device Identification and Authentication, SA-4: Acquisition Process, SC-17: Public Key Infrastructure Certificates, SI-4: Information System Monitoring, PM-5: Information System Inventory
+* ITIL 2011 KPIs: Information Security Management
+* ICO Protecting Data: Inappropriate locations for processing data
 
 ## Control 1.1
 
@@ -23,9 +33,15 @@ This inventory includes assets connected to the infrastructure physically, virt
 
 ### Why it is required
 
-This is the key control which must be implemented fully to ensure that devices on the IT estate are known and well managed. Operations and security teams cannot support and secure the full estate if they do not have visibility of all devices.
+This is the key control which must be implemented fully to ensure that assets on the IT estate are known and well managed. 
 
-Link to NCSC's guidance, ISO27001 etc - know your estate, if you don't know your assets how can you secure etc.
+The Department's level of risk will be increased if assets are not known (This is sometimes known as 'shadow IT' or 'grey IT').
+
+Operations and security teams cannot support and secure the full estate if they do not have visibility of all assets.
+
+A service cannot properly plan for Business Continuity and Disaster Recovery (BC/DR) if it does not know its assets.
+
+Please also see: [NCSC Asset Management Guidance](https://www.ncsc.gov.uk/guidance/asset-management)
 
 ### How it is achieved
 
@@ -33,17 +49,24 @@ The outcome required is for all devices to be captured and maintained within a c
 
 Service owners and delivery teams will be expected to select the optimal method to update and maintain their devices and demonstrate evidence of this.
 
-* The Config Management Database (CMDB) is the master repository for all devices wihtin the Department.
-* Software Bill Of Materian (SBOM) can be created and maintained as part of standard CI/CD processes to maintain the up-to-date view of software components and configuration for a service
+* The Configuration Management Database (CMDB) is the master repository for all devices wihtin the Department.
+* Software Bill Of Materials (SBOM) can be created and maintained as part of standard CI/CD processes to maintain the up-to-date view of software components and configuration for a service
 * CMDB can be updated programatically within a CI/CD pipeline to update and manage components as they're deployed and updated
 * Device information can be gathered directly from the master source for the relevant information
-  * Network Managment
+  * Network Management
   * Device Management
   * Cloud platforms
 
 ![CMDB hierarchy and integration](../Assurance/Images/ASU-CTG001-CMDB-Hierarchy.png)
 
 *Compliance for this control is met when 100% of a services' assets are captured and maintained. Less than 100% of all assets will result in non-compliance with this control*
+
+### Who will do this activity
+
+* Accountability within the department ultimately rests with the Permanent Secretary 
+* Accountable role: Service Owner (Senior Responsible Owner if not Service Owner)
+* Responsible roles: Business Analyst, Technical Architects, Security Architect, Security Risk Management
+* Other supporting roles: Delivery Manager, Product Manager, DevOps, Security Architect
 
 ## Control 1.2
 
@@ -58,6 +81,8 @@ Ensure that a process exists to address unauthorized assets on a weekly basis. T
 
 Keep an updated record of what's on the estate and remove stuff which shouldn't be there. Helps to highlight unauthorised stuff etc.
 
+This helps to reduce the attack surface presented to malicious actors.  If something is switched off, it can't be attacked.
+
 ### How it is achieved
 
-*TBC at present for an enterprise-wide approach, no consistent way of doing this, onus on the servers keeping their records up to date*
+*TBC at present for an enterprise-wide approach, no consistent way of doing this, onus on the services keeping their records up to date*
