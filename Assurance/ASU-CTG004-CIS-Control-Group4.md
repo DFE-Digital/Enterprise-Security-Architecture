@@ -6,6 +6,15 @@
 | Created: 2022-03-22 |
 | Domain: Security |
 | Author: pete.dingwall@education.gov.uk |
+| Edits: paul.fitzgibbons@education.gov.uk |
+
+## Related Controls 
+This is covered in various other Security/Management/Assessment Frameworks such as:
+* [NCSC Cyber Assessment Framework (CAF) B1](https://www.ncsc.gov.uk/collection/caf/caf-principles-and-guidance/b-1-service-protection-policies-and-processes)
+* [NCSC Cyber Assessment Framework (CAF) B4](https://www.ncsc.gov.uk/collection/caf/caf-principles-and-guidance/b-4-system-security)
+* ISO27001:2022: A6.7, A8.1, A8.2, A8.5, A8.9
+* NIST 800-53: CM-1, CM-2, CM-6, CM-7, CM-9, SA-3, SA-8, SA-10, AC-18, AC-2, AC-11, AC-12, CA-9, SC-7, MA-4, IA-5
+
 
 ## Control 4.1
 
