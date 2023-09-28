@@ -1,4 +1,4 @@
-# CIS Control 9
+# CIS Control 9 - Email and Web Browser Protections
 
 | Document Information |
 ------------------------|
@@ -6,6 +6,12 @@
 | Created: 2022-03-22 |
 | Domain: Security |
 | Author: pete.dingwall@education.gov.uk |
+| Edits: paul.fitzgibbons@education.gov.uk |
+
+## Related Controls 
+This is covered in various other Security/Management/Assessment Frameworks such as:
+* ISO27001:2022: A8.1, A8.23
+* NIST 800-53: CM-10, SC-18, SI-8
 
 ## Control 9.1
 
