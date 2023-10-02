@@ -26,9 +26,13 @@ Establish and follow a process, preferably automated, for granting access to ent
 
 ### Why it is required
 
+* If access is not granted in a timely basis this can:
+*     be frustrating for users
+*     be wasteful of public money
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* Leverage APIs and automation in enterprise products to join up systems and integrate processes
 
 ## Control 6.2
 
@@ -42,9 +46,14 @@ Establish and follow a process, preferably automated, for revoking access to ent
 
 ### Why it is required
 
+* If access is not revoked  in a timely basis this can:
+*     lead to unauthorised access of information (Information Disclosure)
+*     lead to unauthorised modification of information (Tampering)
+*     be wasteful of public money
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* Leverage APIs and automation in enterprise products to join up systems and integrate processes
 
 ## Control 6.3
 
@@ -58,9 +67,11 @@ Require all externally-exposed enterprise or third-party applications to enforce
 
 ### Why it is required
 
+* Externally exposed assets are more likely to be targetted by threat actors
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* Use common components which meet the requirements of the Department
 
 ## Control 6.4
 
@@ -73,6 +84,8 @@ Require all externally-exposed enterprise or third-party applications to enforce
 Require MFA for remote network access.
 
 ### Why it is required
+
+* Makes it more difficult for an attacker to gain unauthorized access to the network
 
 ### How it is achieved
 
@@ -90,6 +103,10 @@ Require MFA for all administrative access accounts, where supported, on all ente
 
 ### Why it is required
 
+* Administrator, root, super-user, privileged accounts have enhanced privileges allowing them more access to the underlying software or hardware.  These can be abused by threat actors if they can gain access.  MFA can prevent password spraying attacks or dictionary attacks as it requires additional layers of authentication.
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* [Identity Guidelines](https://github.com/DFE-Digital/Enterprise-Security-Architecture/blob/main/Guidelines/GDL-IDE001-Authentication-principles.md#identity-guidelines)
+* [MFA Guidance - Suppliers/External](https://github.com/DFE-Digital/Enterprise-Security-Architecture/blob/main/Guidelines/GDL-IDE003-MFA-Guidance-External.md#multi-factor-authentication---suppliersexternal)
+* Use DfE identity architecture standards (see intranet)
