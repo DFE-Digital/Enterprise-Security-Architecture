@@ -25,9 +25,13 @@ Ensure only fully supported browsers and email clients are allowed to execute in
 
 ### Why it is required
 
+* Use of non-supported software increases the attack surface exposed to malicious actors
+* Use of non-supported software is unlikely to receive automated patching from central services
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* Use approved tools
+* Request non-standard tools from the service desk so they can undergo assurance and risk assessment
 
 ## Control 9.2
 
@@ -41,6 +45,11 @@ Use DNS filtering services on all enterprise assets to block access to known mal
 
 ### Why it is required
 
+* Malicious domains can be used by malicious actors to host malware, illegal material or to carry out malicious activities
+* Filtering of known malicious domains reduces the likelihood of security incidents and breaches
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* Use centrally provided DNS services
+    * [Use NCSC Protective DNS services](https://www.ncsc.gov.uk/information/pdns)
+* Use centrally provided Network services
