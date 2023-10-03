@@ -27,9 +27,11 @@ Establish and maintain a data recovery process. In the process, address the scop
 
 ### Why it is required
 
+* To enable data to be recovered to a suitable point (Recovery Point Objective (RPO)) within a suitable timeframe (Recvovery Time Objective (RTO)) following an incident
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/always-back-up-your-most-important-data
 
 ## Control 11.2
 
@@ -43,10 +45,14 @@ Perform automated backups of in-scope enterprise assets. Run backups weekly, or 
 
 ### Why it is required
 
+* To enable data to be recovered to a suitable point (Recovery Point Objective (RPO)) within a suitable timeframe (Recvovery Time Objective (RTO)) following an incident
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
-
+* Configure systems or software to backup
+* Follow vendor guidelines
+* Follow cloud storage best practices
+  
 ## Control 11.3
 
 | Asset Type | Security Function | Title| 
@@ -58,6 +64,8 @@ Perform automated backups of in-scope enterprise assets. Run backups weekly, or 
 Protect recovery data with equivalent controls to the original data. Reference encryption or data separation, based on requirements.
 
 ### Why it is required
+
+* To prevent unauthorised access to information
 
 ### How it is achieved
 
@@ -74,6 +82,8 @@ Protect recovery data with equivalent controls to the original data. Reference e
 Establish and maintain an isolated instance of recovery data. Example implementations include, version controlling backup destinations through offline, cloud, or off-site systems or services.
 
 ### Why it is required
+
+* In the event of primary systems becoming unavailable, an off-site or isolated backup allows restoration of data to an alternate location
 
 ### How it is achieved
 
