@@ -24,6 +24,9 @@ Ensure network infrastructure is kept up-to-date. Example implementations includ
 
 ### Why it is required
 
+* To ensure the Department benefits from hardware and software updates
+* To reduce the likelihood of exploitation of unpatched vulnerabilties
+
 ### How it is achieved
 
 >Link to guideline or process goes here if existing or planned
