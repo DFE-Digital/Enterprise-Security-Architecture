@@ -27,9 +27,18 @@ Establish and maintain a documented vulnerability management process for enterpr
 
 ### Why it is required
 
+* [NCSC Guidance - 10 Steps to Cyber Security - Vulnerability Management](https://www.ncsc.gov.uk/collection/10-steps/vulnerability-management)
+* Vulnerabilities in software, hardware and/or configuration can put systems at risk of exploit from malicious actors
+* Good management of vulnerabilities will help the Department to maintain a strong security posture
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* Build security into the design of your system or service
+* Know your assets
+    * [CIS Control 1 - Inventory and Control of Enterprise Assets](https://github.com/DFE-Digital/Enterprise-Security-Architecture/blob/main/Assurance/ASU-CTG001-CIS-Control-Group1.md)
+    * [CIS Control 2 - Inventory and Control of Software Assets](https://github.com/DFE-Digital/Enterprise-Security-Architecture/blob/main/Assurance/ASU-CTG002-CIS-Control-Group2.md)
+* Scan assets regularly for vulnerabilities preferably using automated tools
+* Prioritise addressing vulnerabilities based on severity and impact to the Department's mission/objectives
 
 ## Control 7.2
 
@@ -43,9 +52,13 @@ Establish and maintain a risk-based remediation strategy documented in a remedia
 
 ### Why it is required
 
+* New vulnerabilities can be discovered anywhere and at any time within the lifecycle of a project, programme or service
+* Without a regular process to address vulnerabilities the Department can become exposed to increased risk
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* Follow the Department's assurance model
+* [Intranet - Assurance Remediation Plan](https://educationgovuk.sharepoint.com/sites/security/SitePages/assurance.aspx#a-standardised-remediation-action-plan-(rap))
 
 ## Control 7.3
 
@@ -59,9 +72,15 @@ Perform operating system updates on enterprise assets through automated patch ma
 
 ### Why it is required
 
+* Ensures that systems remain protected from known vulnerabilities
+* Reduces the time that systems remain vulnerable from patch release to installation
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* Configure systems to apply updates using automated tooling
+* Use devices that are managed centrally
+* Use devices that are managed with MDM
+* If using IaaS, join a managed domain
 
 ## Control 7.4
 
@@ -75,6 +94,10 @@ Perform application updates on enterprise assets through automated patch managem
 
 ### Why it is required
 
+* Ensures that applications remain protected from known vulnerabilities
+* Reduces the time that applications remain vulnerable from patch release to installation
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* Configure applications appropriately
+* Configure platform management appropriately
