@@ -27,9 +27,12 @@ Deploy and maintain anti-malware software on all enterprise assets.
 
 ### Why it is required
 
+* To block the delivery of malware whether via email, the web or other distribution channels
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* Use centrally provided tooling and software
+* Configure devices appropriately
 
 ## Control 10.2
 
@@ -43,9 +46,13 @@ Configure automatic updates for anti-malware signature files on all enterprise a
 
 ### Why it is required
 
+* New malware is released regularly
+* Updated signatures are required to detect newer malware variants
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* Configure systems and software appropriately
+* Use supported hardware and software
 
 ## Control 10.3
 
@@ -59,6 +66,8 @@ Disable autorun and autoplay auto-execute functionality for removable media.
 
 ### Why it is required
 
+* [Reduces the exposure to cyber attack](https://www.ncsc.gov.uk/information/reducing-your-exposure-to-cyber-attack)
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* Configure systems appropriately using security baselines i.e. CIS Benchmarks
