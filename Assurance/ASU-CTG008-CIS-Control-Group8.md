@@ -34,17 +34,22 @@ Establish and maintain an audit log management process that defines the enterpri
 
 | Asset Type | Security Function | Title| 
 ---| ---| ---|
-|Network |Detect |Establish and Maintain a Vulnerability Management Process|
+|Network |Detect |Collect Audit Logs|
 
 ### The Control
 
-Collect Audit Logs	Collect audit logs. Ensure that logging, per the enterprise’s audit log management process, has been enabled across enterprise assets.
+Collect audit logs. Ensure that logging, per the enterprise’s audit log management process, has been enabled across enterprise assets.
 
 ### Why it is required
 
+* Logs can be used to determine What, Why, How, Who, Where, When
+* Logs can be used to detect suspicious or abnormal activity
+* Logs can be used to investigate operational and security incidents
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* Consult security benchmark documentation, i.e. CIS Benchmarks
+* Configure systems and software appropriately
 
 ## Control 8.3
 
@@ -58,6 +63,11 @@ Ensure that logging destinations maintain adequate storage to comply with the en
 
 ### Why it is required
 
+* If logs do not have sufficient capacity they can wrap around if they are overwhelmed with data
+* This can cause problems with incident investigations if log information is not available
+* Local systems should have enough log storage available to cope with demand until logs can be transferred to other systems
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* Configure systems using vendor best practice
+* Consult security benchmark documentation, i.e. CIS Benchmarks
