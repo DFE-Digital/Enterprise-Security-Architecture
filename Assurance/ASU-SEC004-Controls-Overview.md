@@ -17,9 +17,9 @@
 
 [Control Group 4](../Assurance/ASU-CTG004-CIS-Control-Group4-Secure_Configuration_of_Enterprise_Assets_and_Software.md)
 
-[Control Group 5](../Assurance/ASU-CTG005-CIS-Control-Group5.md)
+[Control Group 5](../Assurance/ASU-CTG005-CIS-Control-Group5-Account_Management.md)
 
-[Control Group 6](../Assurance/ASU-CTG006-CIS-Control-Group6.md)
+[Control Group 6](../Assurance/ASU-CTG006-CIS-Control-Group6-Access_Control_Management.md)
 
 [Control Group 7](../Assurance/ASU-CTG007-CIS-Control-Group7.md)
 
