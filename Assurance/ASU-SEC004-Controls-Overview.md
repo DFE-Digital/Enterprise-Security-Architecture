@@ -9,7 +9,7 @@
 
 ![Controls Overview](../Assurance/Images/Controls-V8-Grid-With-Safeguards.png)
 
-[Control Group 1](../Assurance/ASU-CTG001-CIS-Control-Group1.md)
+[Control Group 1](../Assurance/ASU-CTG001-CIS-Control-Group1-Inventory_and_Control_of_Enterprise_Assets.md)
 
 [Control Group 2](../Assurance/ASU-CTG002-CIS-Control-Group2.md)
 
