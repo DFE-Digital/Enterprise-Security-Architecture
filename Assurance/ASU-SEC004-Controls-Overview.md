@@ -37,4 +37,4 @@
 
 [Control Group 15](../Assurance/ASU-CTG015-CIS-Control-Group15-Service_Provider_Management.md)
 
-[Control Group 17](../Assurance/ASU-CTG017-CIS-Control-Group17-Incident_Response.md)
+[Control Group 17](../Assurance/ASU-CTG017-CIS-Control-Group17-Incident_Response_Management.md)
