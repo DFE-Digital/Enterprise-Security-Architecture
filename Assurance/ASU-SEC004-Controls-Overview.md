@@ -13,9 +13,9 @@
 
 [Control Group 2](../Assurance/ASU-CTG002-CIS-Control-Group2-Inventory_and_Control_of_Software_Assets.md)
 
-[Control Group 3](../Assurance/ASU-CTG003-CIS-Control-Group3.md)
+[Control Group 3](../Assurance/ASU-CTG003-CIS-Control-Group3-Data_Protection.md)
 
-[Control Group 4](../Assurance/ASU-CTG004-CIS-Control-Group4.md)
+[Control Group 4](../Assurance/ASU-CTG004-CIS-Control-Group4-Secure_Configuration_of_Enterprise_Assets_and_Software.md)
 
 [Control Group 5](../Assurance/ASU-CTG005-CIS-Control-Group5.md)
 
