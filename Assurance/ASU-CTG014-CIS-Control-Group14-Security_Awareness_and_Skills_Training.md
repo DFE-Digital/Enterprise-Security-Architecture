@@ -26,6 +26,11 @@ Establish and maintain a security awareness program. The purpose of a security a
 
 ### Why it is required
 
+* To educate the workforce on how to interact with enterprise assets and data in a secure manner
+* To ensure that the workforce is aware of the risks associated with their roles and responsibilities
+* To ensure that the workforce is aware of the enterprise’s security policies and procedures
+* To ensure that the workforce is aware of the enterprise’s security incident reporting procedures
+
 ### How it is achieved
 
 >Link to guideline or process goes here if existing or planned
@@ -42,9 +47,13 @@ Train workforce members to recognize social engineering attacks, such as phishin
 
 ### Why it is required
 
+* Social engineering attacks are extremely common and can be very effective
+* To ensure that the workforce is aware of the risks associated with social engineering attacks
+
 ### How it is achieved
 
 >Link to guideline or process goes here if existing or planned
+* Mandatory training for all staff
 
 ## Control 14.3
 
@@ -57,6 +66,9 @@ Train workforce members to recognize social engineering attacks, such as phishin
 Train workforce members on authentication best practices. Example topics include MFA, password composition, and credential management.
 
 ### Why it is required
+
+* To ensure that the workforce is aware of the risks associated with poor authentication practices
+* To reduce the risk of unauthorised access to enterprise assets and data
 
 ### How it is achieved
 
@@ -74,9 +86,14 @@ Train workforce members on how to identify and properly store, transfer, archive
 
 ### Why it is required
 
+* To ensure that the workforce is aware of the risks associated with poor data handling practices
+* To reduce the risk of unauthorised access to enterprise assets and data
+* To reduce the likelihood of data loss
+* To reduce the likelihood of data exposure
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* Mandatory training for all staff
 
 ## Control 14.5
 
@@ -90,9 +107,19 @@ Train workforce members to be aware of causes for unintentional data exposure. E
 
 ### Why it is required
 
+* To ensure that the workforce is aware of the risks associated with unintentional data exposure
+* To reduce the risk of unauthorised access to enterprise assets and data
+* To reduce the likelihood of data loss
+* To reduce the likelihood of data exposure
+* To reduce the likelihood of reputational damage
+* To reduce the likelihood of regulatory fines
+* To reduce the likelihood of legal action
+* To reduce the likelihood of loss of trust
+* To reduce the likelihood of loss of confidence
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* Mandatory training for all staff
 
 ## Control 14.6
 
@@ -104,9 +131,15 @@ Train workforce members to be able to recognize a potential incident and be able
 
 ### Why it is required
 
+* The sooner an incident is reported, the sooner it can be dealt with
+* To ensure that the workforce is aware of the risks associated with security incidents
+* To ensure that the workforce is aware of the enterprise’s security incident reporting procedures
+* To ensure that the workforce is aware of their role and responsibilities in the event of a security incident
+* To ensure that the workforce is aware of the importance of reporting security incidents as soon as possible
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* Security Incident Reporting Process on intranet
 
 ## Control 14.7
 
@@ -120,9 +153,14 @@ Train workforce to understand how to verify and report out-of-date software patc
 
 ### Why it is required
 
+* To ensure that the workforce is aware of the risks associated with missing security updates
+* To reduce the risk of unauthorised access to enterprise assets and data
+
 ### How it is achieved
 
 >Link to guideline or process goes here if existing or planned
+* Security Testing Process
+* Vulnerability Management Process
 
 ## Control 14.8
 
@@ -135,6 +173,8 @@ Train workforce to understand how to verify and report out-of-date software patc
 Train workforce members on the dangers of connecting to, and transmitting data over, insecure networks for enterprise activities. If the enterprise has remote workers, training must include guidance to ensure that all users securely configure their home network infrastructure.
 
 ### Why it is required
+
+* To reduce the risk of unauthorised access to enterprise assets and data
 
 ### How it is achieved
 
