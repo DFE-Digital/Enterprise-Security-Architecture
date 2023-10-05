@@ -24,7 +24,7 @@ This is covered in various other Security/Management/Assessment Frameworks such 
 
 Designate one key person, and at least one backup, who will manage the enterprise’s incident handling process. Management personnel are responsible for the coordination and documentation of incident response and recovery efforts and can consist of employees internal to the enterprise, third-party vendors, or a hybrid approach. If using a third-party vendor, designate at least one person internal to the enterprise to oversee any third-party work. Review annually, or when significant enterprise changes occur that could impact this Safeguard.
 
-### Why it is required
+### Why it is requiredm
 
 * Helps to ensure that incidents are handled in a timely, effective and consistent manner
 * Ensures that the enterprise has a single point of contact for incident handling
@@ -35,6 +35,7 @@ Designate one key person, and at least one backup, who will manage the enterpris
 ### How it is achieved
 
 >Link to guideline or process goes here if existing or planned
+
 
 ## Control 17.2
 

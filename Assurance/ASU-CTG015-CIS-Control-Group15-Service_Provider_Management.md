@@ -26,6 +26,14 @@ Establish and maintain an inventory of service providers. The inventory is to li
 
 ### Why it is required
 
+* To ensure that the department has a clear understanding of: 
+    * the service providers that it uses
+    * the services that each service provider provides
+    * the classification of each service provider
+    * the contact details for each service provider
+    * the enterprise contact for each service provider
+    * and to ensure that the information is current and up to date
+
 ### How it is achieved
 
 >Link to guideline or process goes here if existing or planned
