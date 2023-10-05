@@ -26,6 +26,12 @@ Designate one key person, and at least one backup, who will manage the enterpris
 
 ### Why it is required
 
+* Helps to ensure that incidents are handled in a timely, effective and consistent manner
+* Ensures that the enterprise has a single point of contact for incident handling
+* Ensures a clear chain of command
+* Ensures that everyone knows their role and responsibilities in the event of an incident
+* By reviewing this control regularly, the enterprise can ensure that the incident handling process is kept up to date and is fit for purpose
+
 ### How it is achieved
 
 >Link to guideline or process goes here if existing or planned
@@ -41,6 +47,10 @@ Designate one key person, and at least one backup, who will manage the enterpris
 Establish and maintain contact information for parties that need to be informed of security incidents. Contacts may include internal staff, third-party vendors, law enforcement, cyber insurance providers, relevant government agencies, Information Sharing and Analysis Center (ISAC) partners, or other stakeholders. Verify contacts annually to ensure that information is up-to-date.
 
 ### Why it is required
+
+* Helps to ensure that incidents are handled in a timely, effective and consistent manner
+* By maintaining contact information for all relevant parties, the enterprise can ensure that the right people are informed of an incident as soon as possible
+* By verifying contact information regularly, the enterprise can ensure that the information remains accurate and up to date
 
 ### How it is achieved
 
@@ -58,6 +68,11 @@ Establish and maintain an enterprise process for the workforce to report securit
 
 ### Why it is required
 
+* Helps to ensure that incidents are handled in a timely, effective and consistent manner
+* By establishing a process for reporting incidents, the enterprise can ensure that incidents are reported as soon as possible
+* By making the process publicly available, the enterprise can ensure that everyone knows how to report an incident
+
 ### How it is achieved
 
->Link to guideline or process goes here if existing or planned
+* Follow the incident reporting process on the intranet
+
