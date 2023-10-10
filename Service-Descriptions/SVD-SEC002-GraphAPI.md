@@ -46,11 +46,11 @@ Services will need to support modern authentication methods (SAML V2.0, OIDC) to
 
 #### **How to request the service**
 
-The service can be requested via ServiceNow for the attention of the IDAM team. Standard response times for requests are X working days.
+The service can be requested via ServiceNow ("Any Other Request") for the attention of the IDAM team. Standard response times for requests are 5 working days.
 
 The time to complete the work will depend on the complexity of the request, the IDAM team will discuss this with you once they have all of the required information.
 
-*There are no escalation routes to expedite requests, so please ensure that you plan appropriately within yor project.*
+*There are no escalation routes to expedite requests, so please ensure that you plan appropriately within your project.*
 
 #### **Information required**
 
