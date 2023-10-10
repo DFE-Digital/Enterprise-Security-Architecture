@@ -36,11 +36,11 @@ Services seeking to integrate into the SSO service must support either SAML2.0 o
 
 #### **How to request the service**
 
-The service can be requested via ServiceNow for the attention of the IDAM team. Standard response times for requests are X working days.
+The service can be requested via ServiceNow ("Any Other Request") for the attention of the IDAM team. Standard response times for requests are 5 working days.
 
 The time to complete the work will depend on the complexity of the request, the IDAM team will discuss this with you once they have all of the required information.
 
-*There are no escalation routes to expedite requests, so please ensure that you plan appropriately within yor project.*
+*There are no escalation routes to expedite requests, so please ensure that you plan appropriately within your project.*
 
 #### **Information required**
 
@@ -57,7 +57,7 @@ The following information must be provided to support the service team to fulfil
   - Connectivity between the service and other services and/or data stores as relevant
   - Data being exchanged by the service
   - Protocols used by the service
-- Authentication protocol used by the service
+- Authentication protocol used by the service (SAML or OIDC)
 - Relevant URLs for the SSO integration
 - Access to the application SME to configure the service
 - Identity claims required to be exchanged by the service
